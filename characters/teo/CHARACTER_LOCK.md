@@ -26,6 +26,16 @@ The 3D image is a rendered visual reference only. It is not an editable 3D model
 5. For exact reproduction, use the existing approved artwork. Fresh generation cannot guarantee pixel-identical results, even with the same prompt and reference images. Reference-conditioned generation is suitable for proposed new scenes or poses, subject to visual comparison against these originals.
 6. Do not invent canonical details that these images do not establish, including exact age, height, measurements, color hex codes, unseen back details, or hidden construction. Treat any necessary unseen details as provisional and obtain explicit user approval before adding them to the locked design.
 
+## Movement and animation
+
+**Added 2026-11-18 at the user's direction.** The lock fixes Teo's design, not his motion. He should move with natural fluidity.
+
+- Allowed, with no further approval: his mouth moving when he speaks, blinking, eye direction, changing expressions, head turns, gestures, walking, running, reaching, kneeling, sitting, and his hair and clothes reacting to movement.
+- Not allowed without explicit approval: any change to his face structure, apparent age, skin tone, hair shape, build, proportions, clothing, emblem, accessories, or palette, whether between shots or within a single clip. No morphing or restyling mid-motion.
+- Expressions may show teeth only as far as natural speech requires; his resting look stays the approved closed-mouth smile.
+- Animating from an approved image means using a copy as the starting frame. The approved PNG masters themselves are never overwritten or altered.
+- Include this rule in every motion or video prompt, and compare the first and last frame of each clip against the approved references.
+
 ## Visible design to preserve
 
 - **Identity and proportions:** A young-adult male character with a warm, approachable expression; an athletic, muscular build; broad shoulders and chest; a tapered waist; defined upper arms and forearms; and long-legged, natural stylized proportions. Match the images' actual silhouette and head-to-body relationship.

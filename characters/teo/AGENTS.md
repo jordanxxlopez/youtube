@@ -15,6 +15,9 @@ Before creating, editing, animating, modeling, or depicting Teo, read
   files. Never overwrite the masters, even when a derivative looks similar.
 - Change only the pose, action, framing, or setting requested for the current
   work; do not treat a new scene as permission to change his design.
+- Movement is allowed and expected: his mouth moves when he speaks and his body
+  moves naturally when he walks or acts. Motion never changes his design. See
+  "Movement and animation" in `CHARACTER_LOCK.md`.
 - If references cannot be accessed or a requested change would alter his
   canonical design, identify the issue before substituting anything. A new
   canonical design requires the user's explicit approval.
