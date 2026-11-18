@@ -1,0 +1,30 @@
+{
+  "character": "Mateo (Teo)",
+  "design_version": "1.0",
+  "status": "LOCKED",
+  "approved_on": "2026-11-18",
+  "authority": "User-approved 2D and 3D images from this conversation",
+  "change_rule": "Do not redesign, replace or alter approved masters without explicit user approval.",
+  "references": [
+    {
+      "path": "images/teo-approved-2d.png",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 1413536,
+      "sha256": "6c035528e92d0f16fff859cace591949eabf87fa62529cf553cb464144d630e9",
+      "git_blob_sha1": "7db311bfa70c91368a4ee3feb8ebf35c9c497c73",
+      "source_generated_filename": "exec-806fd948-3ceb-4730-81a4-64249d513e53.png"
+    },
+    {
+      "path": "images/teo-approved-3d.png",
+      "format": "PNG",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 1735661,
+      "sha256": "331e69be745122e1af508ab8149d928c76ce3e86334b95d202a82824eabe38a9",
+      "git_blob_sha1": "5cda6e048b0f8b793cd1ebb11e83d0ab6c19fcf0",
+      "source_generated_filename": "exec-1e93a8b9-ee80-4852-961c-40f8c53d9cb9.png"
+    }
+  ]
+}
