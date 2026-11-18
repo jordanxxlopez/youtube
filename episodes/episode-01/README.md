@@ -6,7 +6,9 @@ speaks, walks, gestures, and interacts with props inside continuous environments
 The user approved the original full-scene 3D speaking/walking test as the
 performance and staging benchmark. The cinematic episodes have not been made.
 
-Start with the [cinematic production brief](production/CINEMATIC_BRIEF.md).
+Start with the [cinematic production brief](production/CINEMATIC_BRIEF.md),
+[full-length shot plan](production/CINEMATIC_SHOT_PLAN.md), and
+[workflow/pricing findings](production/CINEMATIC_OPTIONS.md).
 The benchmark is `motion/3d/performance-test.mp4`, generated with Kling O3 Pro
 under task `ca5e3633-9648-452e-9a07-8818a275344b`, with
 `keyframes/opening-3d.png` as the scene reference. Benchmark approval does not

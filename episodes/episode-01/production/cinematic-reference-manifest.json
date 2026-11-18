@@ -1,0 +1,32 @@
+{
+  "purpose": "Retained cinematic scene and performance references; does not replace canonical character masters",
+  "approved_performance_benchmark": "motion/3d/performance-test.mp4",
+  "original_model": "Kling O3 Pro",
+  "benchmark_task_id": "ca5e3633-9648-452e-9a07-8818a275344b",
+  "assets": [
+    {
+      "path": "keyframes/opening-2d.png",
+      "bytes": 2175616,
+      "sha256": "210ccd97a18ee970aec029b2e1e399610e8e4415b66f6fd4fd226ad42ed3c2c7",
+      "storage": "repository"
+    },
+    {
+      "path": "motion/2d/performance-test.mp4",
+      "bytes": 15889596,
+      "sha256": "2f1c6e510fd6abb0a79864cdb942d8dc90abd56eef87fab8f801dc9587b0f0ba",
+      "storage": "working-storage"
+    },
+    {
+      "path": "keyframes/opening-3d.png",
+      "bytes": 2226738,
+      "sha256": "acd6c06f9decc41b1391eef2423eae37efde60443cb76ddc461e11ff17e09fb1",
+      "storage": "repository"
+    },
+    {
+      "path": "motion/3d/performance-test.mp4",
+      "bytes": 15396143,
+      "sha256": "78e81ad2cd19fca0b8774d72d9bc943e6dd2dcaca9d2c882eeac4da9a5311c32",
+      "storage": "working-storage"
+    }
+  ]
+}

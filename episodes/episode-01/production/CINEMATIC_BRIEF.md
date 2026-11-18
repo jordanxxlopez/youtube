@@ -25,6 +25,11 @@ The video path above refers to retained working-storage media; this repository
 stores its scene image and task identifier, not the video or a temporary signed
 playback URL. See [researched production routes](CINEMATIC_OPTIONS.md).
 
+The [full-length shot plan](CINEMATIC_SHOT_PLAN.md) accounts for 600 seconds
+in each style; its detailed shot manifest remains a draft awaiting production.
+[Reference hashes](cinematic-reference-manifest.json) identify the retained
+scene images and motion samples.
+
 ## Character and performance
 
 Use the relevant approved PNG as an actual visual reference, following

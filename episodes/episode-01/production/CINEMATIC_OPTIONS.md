@@ -33,8 +33,11 @@ video), and LTX-2.3 audio-to-video are exposed. Live pricing returned $0.14 per
 second for O3 Pro, $0.10 per second for LTX, and $0.014 per billing unit for
 LipSync. The LipSync unit-to-duration rule is not clarified by that API, so its
 full-film price remains an estimate. Configuration-specific charges may differ.
-Account credit sufficiency has not been established. No paid generation was
-performed in this research pass.
+Importing the approved opening reference returned a billing block: the
+connected account reported exhausted credits, with uploads and generation
+unavailable. Browse/schema/pricing calls remain available. No import or paid
+generation succeeded in this research pass. Resume only after the user resolves
+the credit block; then check readiness and retain the existing source images.
 
 ## Alternative: LTX with the exact voice as input
 
@@ -51,6 +54,18 @@ offers 2–20-second audio-driven shots at 720p/1080p. Its separate
 [direct pricing](https://docs.ltx.io/pricing/) is $0.06/sec at 720p and $0.10/sec
 at 1080p for LTX-2.3 Pro audio-to-video. Direct API funds, fal billing, and LTX
 Studio subscriptions are distinct; do not mix their prices or credit allowances.
+
+## Estimate for the current full-length shot plan
+
+The [95-shot plan](CINEMATIC_SHOT_PLAN.md) covers exactly 600 seconds per
+version. Whole-second generation requests total 642 seconds per version,
+including footage trimmed at edit boundaries, or 1,284 seconds for both.
+The connected fal estimate is **$179.76** at its returned $0.14/sec base rate.
+The published audio-off rate would imply **$143.81**, with a separate lip-sync
+pass. Neither is a final configured quote or a complete production budget.
+Both exclude retries, new scene references, voice revisions, and lip-sync costs.
+Do not render all 1,284 seconds until the credit block is resolved, the voice
+workflow is settled, and the spending cap is established.
 
 ## Production structure
 
