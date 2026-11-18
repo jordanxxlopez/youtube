@@ -3,6 +3,21 @@
 **Status: LOCKED**  
 **User approval date: 2026-11-18**
 
+**Animation clarification, 2026-11-18:** The user explicitly approved natural
+mouth movement while speaking, fluid walking and body movement, and expressive
+prosody. Lock Teo's appearance, not his pose or performance. His facial
+structure, identity, hair, build, clothes, and colors must stay consistent
+while he animates.
+
+For speech, synchronize mouth shapes and jaw movement to the actual dialogue
+performance, including pauses, stress, rhythm, and emotion. Natural blinking,
+eye movement, expressions, gestures, walking, and weight shifts are allowed.
+The closed-mouth smile is his reference resting expression, not a requirement
+to keep his mouth shut during dialogue. Avoid an exaggerated toothy grin or a
+new permanent facial design. Use the spoken performance to guide animation;
+adding a different recording afterward requires matching or retiming the lip
+sync. Ordinary acting does not need a separate redesign approval.
+
 These two exact images are Teo's canonical approved appearance. Every future illustration, render, model, animation, or production brief must consult the images before work begins. This lock supersedes all earlier Teo designs, descriptions, prompts, and reference pictures, including the original sombrero-and-poncho inspiration and earlier child-character design.
 
 ## Canonical references
@@ -35,6 +50,7 @@ The 3D image is a rendered visual reference only. It is not an editable 3D model
 - Expressions may show teeth only as far as natural speech requires; his resting look stays the approved closed-mouth smile.
 - Animating from an approved image means using a copy as the starting frame. The approved PNG masters themselves are never overwritten or altered.
 - Include this rule in every motion or video prompt, and compare the first and last frame of each clip against the approved references.
+- Synchronize visible speech to the actual voice performance, including pauses, stress, rhythm, and emotion. Replacing a voice later requires matching or retiming the mouth animation.
 
 ## Visible design to preserve
 
@@ -56,11 +72,11 @@ Before using either template, attach the appropriate approved PNG as an actual i
 
 ### 2D prompt
 
-> Create a new 2D illustration of the exact approved Teo shown in the attached `teo-approved-2d.png`. This image is the authoritative character reference; the attached 3D counterpart, if supplied, is a secondary identity check. Preserve Teo's exact approved facial identity, apparent age, warm tan skin, brown eyes, thick eyebrows, dark-brown curly hairstyle and silhouette, clean-shaven face, closed-mouth smile, muscular athletic build, and body proportions. Preserve his fitted muted gray-green/teal three-button short-sleeve henley, small gold neuron emblem on his left chest, charcoal-brown drawstring cuffed joggers, rust-and-cream high-top sneakers, and dark left-wrist band. Match the reference's palette, clothing construction, accessory placement, clean outlines, and cel shading. User-requested scene: [SCENE]. User-requested pose: [POSE]. Change only those explicitly requested scene and pose elements. Preserve all other approved design choices. For a full-body composition, keep the complete hair silhouette and both shoes inside the frame. Consult the attached artwork throughout; do not reinterpret, beautify, age, recolor, exaggerate the muscles, change the clothes, or revert to any earlier Teo design. This is a production variation, not a new canonical design.
+> Create a new 2D illustration of the exact approved Teo shown in the attached `teo-approved-2d.png`. This image is the authoritative character reference; the attached 3D counterpart, if supplied, is a secondary identity check. Preserve Teo's exact approved facial identity, apparent age, warm tan skin, brown eyes, thick eyebrows, dark-brown curly hairstyle and silhouette, clean-shaven face, closed-mouth resting smile, muscular athletic build, and body proportions. Natural speaking mouth shapes, expressions, and fluid movement are allowed; synchronize speech animation to the actual voice and its prosody without altering his facial structure. Preserve his fitted muted gray-green/teal three-button short-sleeve henley, small gold neuron emblem on his left chest, charcoal-brown drawstring cuffed joggers, rust-and-cream high-top sneakers, and dark left-wrist band. Match the reference's palette, clothing construction, accessory placement, clean outlines, and cel shading. User-requested scene: [SCENE]. User-requested pose: [POSE]. Change only those explicitly requested scene and pose elements. Preserve all other approved design choices. For a full-body composition, keep the complete hair silhouette and both shoes inside the frame. Consult the attached artwork throughout; do not reinterpret, beautify, age, recolor, exaggerate the muscles, change the clothes, or revert to any earlier Teo design. This is a production variation, not a new canonical design.
 
 ### 3D prompt
 
-> Create a new stylized 3D rendered image of the exact approved Teo shown in the attached `teo-approved-3d.png`. This image is the authoritative character reference; the attached 2D counterpart, if supplied, is a secondary identity check. Preserve Teo's exact approved facial identity, apparent age, warm tan skin, brown eyes, thick eyebrows, dark-brown curly hairstyle and silhouette, clean-shaven face, closed-mouth smile, muscular athletic build, and body proportions. Preserve his fitted muted gray-green/teal three-button short-sleeve henley, small gold neuron emblem on his left chest, charcoal-brown drawstring cuffed joggers, rust-and-cream high-top sneakers, and dark left-wrist band. Match the reference's palette, clothing construction, accessory placement, sculpted curls, soft stylized facial modeling, matte materials, and subtle fabric texture. User-requested scene: [SCENE]. User-requested pose: [POSE]. Change only those explicitly requested scene and pose elements. Preserve all other approved design choices. For a full-body composition, keep the complete hair silhouette and both shoes inside the frame. Consult the attached artwork throughout; do not reinterpret, beautify, age, recolor, exaggerate the muscles, change the clothes, make the character photorealistic, or revert to any earlier Teo design. Deliver a rendered image; do not imply that a model or rig has been created. This is a production variation, not a new canonical design.
+> Create a new stylized 3D rendered image of the exact approved Teo shown in the attached `teo-approved-3d.png`. This image is the authoritative character reference; the attached 2D counterpart, if supplied, is a secondary identity check. Preserve Teo's exact approved facial identity, apparent age, warm tan skin, brown eyes, thick eyebrows, dark-brown curly hairstyle and silhouette, clean-shaven face, closed-mouth resting smile, muscular athletic build, and body proportions. Natural speaking mouth shapes, expressions, and fluid movement are allowed; synchronize speech animation to the actual voice and its prosody without altering his facial structure. Preserve his fitted muted gray-green/teal three-button short-sleeve henley, small gold neuron emblem on his left chest, charcoal-brown drawstring cuffed joggers, rust-and-cream high-top sneakers, and dark left-wrist band. Match the reference's palette, clothing construction, accessory placement, sculpted curls, soft stylized facial modeling, matte materials, and subtle fabric texture. User-requested scene: [SCENE]. User-requested pose: [POSE]. Change only those explicitly requested scene and pose elements. Preserve all other approved design choices. For a full-body composition, keep the complete hair silhouette and both shoes inside the frame. Consult the attached artwork throughout; do not reinterpret, beautify, age, recolor, exaggerate the muscles, change the clothes, make the character photorealistic, or revert to any earlier Teo design. Deliver a rendered image; do not imply that a model or rig has been created. This is a production variation, not a new canonical design.
 
 ## Review before delivery
 

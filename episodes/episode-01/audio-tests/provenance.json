@@ -1,0 +1,93 @@
+{
+  "created_on": "2026-11-18",
+  "status": "voice_audition_not_final_character_voice_lock",
+  "engine": "Kokoro 82M v1.0 via kokoro-onnx",
+  "inference": "CPUExecutionProvider, entirely local after model download",
+  "network_calls_for_synthesis": false,
+  "paid_api_calls": false,
+  "voices": "Stock synthetic voice packs; no personal recording or voice clone used",
+  "package_versions": {
+    "kokoro-onnx": "0.6.1",
+    "onnxruntime": "1.32.0",
+    "numpy": "2.5.5",
+    "soundfile": "0.14.0",
+    "phonemizer": "3.6.0",
+    "espeakng-loader": "0.2.4"
+  },
+  "sources": [
+    {
+      "url": "https://github.com/thewh1teagle/kokoro-onnx",
+      "role": "CPU inference package and official download instructions",
+      "license": "MIT"
+    },
+    {
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+      "role": "Upstream model card",
+      "license": "Apache-2.0"
+    },
+    {
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M/blob/main/VOICES.md",
+      "role": "Voice metadata and quality limitations"
+    }
+  ],
+  "downloaded_model": {
+    "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/kokoro-v1.0.onnx",
+    "sha256": "beb0d1848dee9a49da392cc3df26958d46cfa35d321edf434f52949153f0df3a"
+  },
+  "downloaded_voices": {
+    "url": "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.1/voices-v1.0.bin",
+    "sha256": "bca610b8308e8d99f32e6fe4197e7ec01679264efed0cac9140fe9c29f1fbf7d"
+  },
+  "limitations": [
+    "Synthetic speech is an audition for naturalness, not a human voice recording.",
+    "Very short utterances and long chunks can reduce prosody quality; render dialogue in sensible sentence groups.",
+    "Scientific terms and character-name pronunciation need review.",
+    "No emotional acting or lipsync is inferred from this audio alone."
+  ],
+  "samples": [
+    {
+      "character": "Teo",
+      "voice_id": "am_puck",
+      "speed": 0.8,
+      "file": "teo-voice-sample.wav",
+      "text": "Hey, I'm Teo! Catching a ball looks easy, right? But inside your brain, a whole team is getting ready. Come on, let's meet them!",
+      "sample_rate": 24000,
+      "duration_seconds": 10.042,
+      "generation_seconds": 3.583,
+      "peak_amplitude": 0.6720206141471863,
+      "sha256": "dd9b7458f0db7f75ac434e7817e50ecbb4af3b289680086baf27d45ce51f3316"
+    },
+    {
+      "character": "Dani",
+      "voice_id": "af_heart",
+      "speed": 0.8,
+      "file": "dani-voice-sample.wav",
+      "text": "Welcome to the Brain Dome, Teo. This is a model we can explore together. Your brain's different parts work as a team, all the time.",
+      "sample_rate": 24000,
+      "duration_seconds": 10.251,
+      "generation_seconds": 3.303,
+      "peak_amplitude": 0.4833112359046936,
+      "sha256": "c6e5bb44b605b92ca495d4ca1df6c5638678375464f0633da806fb33158349d5"
+    }
+  ],
+  "normal_rate_comparison_samples": [
+    {
+      "character": "Teo",
+      "voice_id": "am_puck",
+      "speed": 0.95,
+      "file": "teo-voice-normal-rate.wav",
+      "text": "Hey, I'm Teo! Catching a ball looks easy, right? But inside your brain, a whole team is getting ready. Come on, let's meet them!",
+      "duration_seconds": 8.440666666666667,
+      "sha256": "bcab3d560440bd9aefb5b51e5597408c6405d8ee618ea051f68c8dafb13bdc68"
+    },
+    {
+      "character": "Dani",
+      "voice_id": "af_heart",
+      "speed": 0.96,
+      "file": "dani-voice-normal-rate.wav",
+      "text": "Welcome to the Brain Dome, Teo. This is a model we can explore together. Your brain's different parts work as a team, all the time.",
+      "duration_seconds": 8.306666666666667,
+      "sha256": "07e2e98e19a391dfc75cfa6bd6ad2e68fe54a0d8ba9dd3e44568816087eba2db"
+    }
+  ]
+}

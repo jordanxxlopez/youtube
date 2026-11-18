@@ -15,6 +15,10 @@ documentation:
    paths. A new scene or pose does not authorize a character redesign.
 5. Obtain explicit user approval before changing Teo's canonical design.
 
+The user explicitly permits natural expression, fluid walking/body motion,
+and mouth movement synchronized to spoken dialogue and its prosody. The
+character lock preserves appearance; it does not freeze acting or the mouth.
+
 The reference images are authoritative when prose or prompts disagree. This
 is a project continuity rule; it does not imply a technical file lock or that
 fresh image generation can produce pixel-identical copies.

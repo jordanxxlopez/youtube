@@ -1,0 +1,781 @@
+{
+  "metadata": {
+    "schema_version": "1.0",
+    "episode_id": "episode-01",
+    "working_title": "The Brain Team Challenge",
+    "series_title": null,
+    "status": "Final shared ten-minute script. Story audio timing is measured; final 2D and 3D picture assembly remains pending.",
+    "language": "en-US",
+    "formats": [
+      "2D animated episode",
+      "stylized 3D animated episode"
+    ],
+    "target_runtime_seconds": [
+      600,
+      600
+    ],
+    "assumed_spoken_words_per_minute": 142.48,
+    "spoken_word_count": 1306,
+    "question_count": 6,
+    "question_pause_seconds": 18,
+    "action_seconds": 28,
+    "estimated_seconds": 595.968625,
+    "word_count_method": "Unicode word tokens, keeping internal apostrophes and hyphens together; dialogue text only.",
+    "timing_method": "Story duration and scene windows come from the measured audio timeline. At 24 fps, finish the story on the next frame boundary at 596.000 seconds, including a 0.031375-second silent transition after speech, then show a purposeful 4.000-second credits card to reach exactly 600.000 seconds. No dialogue time-stretching or long padding.",
+    "canonical_references": {
+      "2d": "../../characters/teo/images/teo-approved-2d.png",
+      "3d": "../../characters/teo/images/teo-approved-3d.png",
+      "guide": "../../characters/teo/CHARACTER_LOCK.md"
+    },
+    "voice_direction": "Natural-sounding generated English character performances are authorized. Use conversational phrasing, warmth, restrained comic timing, and distinct character deliveries; no generic announcer cadence. Voices are provisional performance choices, not imitations of real people.",
+    "visual_continuity": "Consult both locked Teo images. Preserve the approved adult-looking identity, physique, skin, curls, henley, emblem, joggers, shoes, wristband, muted palette, and medium-specific style. Add no hat, jacket, visor, or new teeth. Do not alter approved master files.",
+    "mouth_animation": "The video request includes fluid walking, natural body motion, expressions, and speaking lip movements synchronized to dialogue and prosody. Preserve the approved facial structure and closed-mouth resting smile. Use subtle speaking mouth shapes; do not invent a new visible dentition design or a toothy grin. Use genuine diagram, hand, and intercom cutaways where helpful, without forcing Teo dialogue offscreen or using a frozen host for voiceover. Keep the canonical reference files unchanged.",
+    "science_framing": "The room is a simulation. Cell voices are guide programs, not literal talking cells. Lobe highlights show tour focus, not the only active tissue. The four-lobe tour is not a mandatory neural processing sequence. Sound is a cue in this example, not a requirement for catching.",
+    "production_scope": "Shared dialogue, actions, labels, and audio timing for both versions; visual_2d and visual_3d specify each medium. No publication is implied by this draft.",
+    "pronunciation_guide": {
+      "Teo": "TEH-oh",
+      "Dani": "DAH-nee",
+      "occipital": "ok-SIP-ih-tul",
+      "parietal": "puh-RYE-uh-tul",
+      "temporal": "TEM-puh-rul",
+      "frontal": "FRUN-tul",
+      "cerebrum": "suh-REE-brum",
+      "cerebellum": "sair-uh-BELL-um",
+      "neuron": "NOOR-on",
+      "astrocyte": "AS-troh-site",
+      "microglia": "my-kroh-GLEE-uh",
+      "microglial": "my-kroh-GLEE-ul"
+    },
+    "target_content_seconds": [
+      592,
+      600
+    ],
+    "endcard_max_seconds": 8,
+    "measured_baseline": {
+      "spoken_words": 1306,
+      "spoken_seconds": 549.96863,
+      "total_seconds": 595.968625,
+      "note": "Final measured story audio after shortening the optional cup-example sentence."
+    },
+    "extension": {
+      "spoken_words": 165,
+      "extra_observation_seconds": 4,
+      "purpose": "Two new teaching interactions: changing hand/ball spatial relationships, and movement signals plus returning body information."
+    },
+    "estimated_endcard_seconds": 4.0,
+    "timing_status": "measured",
+    "measured_content_seconds": 595.968625,
+    "closing_transition_seconds": 0.031375,
+    "endcard_start_seconds": 596.0,
+    "endcard_seconds": 4.0,
+    "final_runtime_seconds": 600,
+    "measured_audio_timeline": "audio/timeline.json"
+  },
+  "schema": {
+    "description": "A single episode object. Metadata and directions are not spoken. Only scenes[].lines[].text is voice content.",
+    "scene_fields": {
+      "id": "Stable scene identifier",
+      "title": "Editable scene heading",
+      "visual_2d": "2D production direction, not dialogue",
+      "visual_3d": "3D production direction, not dialogue",
+      "lines": "Ordered dialogue objects",
+      "action_beats": "Explicit extra time inserted after the referenced line and after any pause on that line",
+      "spoken_word_count": "Computed from dialogue text only",
+      "question_pause_seconds": "Sum of line pause_after_seconds",
+      "action_seconds": "Sum of action beat seconds",
+      "estimated_seconds": "Compatibility duration field; now populated from measured voice timing, including authored holds",
+      "measured_seconds": "Measured scene audio duration, including its action and question holds",
+      "measured_start_seconds": "Start on the measured shared episode audio timeline",
+      "measured_end_seconds": "End on the measured shared episode audio timeline"
+    },
+    "line_fields": {
+      "id": "Stable line identifier",
+      "speaker": "A cast[].id value",
+      "text": "Exact spoken English words; do not read labels or stage directions aloud",
+      "pause_after_seconds": "Silence/response space immediately after this line; question pauses are exactly 3 seconds",
+      "viewer_question_id": "Optional identifier q1–q6; only these six lines are viewer questions",
+      "performance": "Optional unspoken performance direction"
+    },
+    "action_beat_fields": {
+      "after_line_id": "Insert after this line and its pause",
+      "seconds": "Additional duration, not overlapping dialogue",
+      "action": "Unspoken visual direction",
+      "sound": "Unspoken sound/edit direction; no additional dialogue"
+    },
+    "alignment_rule": "Both medium versions share line IDs and beat timing. New audio durations should replace estimates and retime visuals, not truncate questions."
+  },
+  "cast": [
+    {
+      "id": "TEO",
+      "display_name": "Teo",
+      "role": "Explorer and viewer companion; approved locked design",
+      "performance": "Warm young-adult voice; curious, playful, conversational; never patronizing or a booming presenter."
+    },
+    {
+      "id": "DANI",
+      "display_name": "Dani",
+      "role": "Scientist speaking from the lab intercom; no new on-screen character design required",
+      "performance": "Calm, friendly, lightly amused; clear science without lecture cadence."
+    },
+    {
+      "id": "NEURON_GUIDE",
+      "display_name": "Neuron guide",
+      "role": "Temporary simulation guide program representing a neuron",
+      "performance": "Bright and quick, while keeping every word intelligible."
+    },
+    {
+      "id": "ASTROCYTE_GUIDE",
+      "display_name": "Astrocyte guide",
+      "role": "Temporary simulation guide program representing an astrocyte",
+      "performance": "Steady and welcoming; no sleepy caricature."
+    },
+    {
+      "id": "MICROGLIA_GUIDE",
+      "display_name": "Microglia guide",
+      "role": "Temporary simulation guide program representing a microglial cell",
+      "performance": "Matter-of-fact, friendly, gently dry humor; no alarmist cleanup voice."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene-01",
+      "title": "A catch becomes a mystery",
+      "visual_2d": "Open on the locked 2D Teo in a simple studio-lab space. A gently tossed soft ball lands on a padded mat just beside his hands; use a brief hand-and-ball insert. The room opens into a drawn, room-size brain simulation with a level walkway. A clearly labeled replay freezes on a display, not in the physical world.",
+      "visual_3d": "Use the locked 3D Teo identity and matte rendered look in the same studio-lab space. Show the soft ball and hands in a close insert, then reveal a room-size projected brain model around a level walkway. Keep the replay on a visible simulation screen; no shrinking, headgear, or anatomical interior gore.",
+      "lines": [
+        {
+          "id": "scene-01-line-01",
+          "speaker": "TEO",
+          "text": "One soft ball. Two hands. I can do this. Oh! That was almost a catch. Dani, can we try that again?",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-01-line-02",
+          "speaker": "DANI",
+          "text": "Absolutely. But first, I have a challenge. Can you discover how your brain and body work together to catch it?",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-01-line-03",
+          "speaker": "TEO",
+          "text": "My hands are right here. The rest of the team is a little harder to see.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-01-line-04",
+          "speaker": "DANI",
+          "text": "Welcome to our brain simulation. This whole room is a model we can explore. We are not inside a real person, and nobody has shrunk.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-01-line-05",
+          "speaker": "TEO",
+          "text": "Good. My shoes already fit. Let's find the team before our next gentle toss.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-01-line-06",
+          "speaker": "DANI",
+          "text": "We will visit four outer lobes of the cerebrum, the big, wrinkly part of the brain. Each side has these lobes. Other parts help, too.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-01-line-07",
+          "speaker": "TEO",
+          "text": "Come with me. You can help spot the clues. Watching is all you need to do.",
+          "pause_after_seconds": 0
+        }
+      ],
+      "action_beats": [
+        {
+          "after_line_id": "scene-01-line-03",
+          "seconds": 3,
+          "action": "The replay display pauses on the ball near Teo’s hands; the title appears, followed by a wide reveal of the simulation.",
+          "sound": "Soft foam plop, a curious two-note musical phrase, then a quiet room hum."
+        }
+      ],
+      "spoken_word_count": 137,
+      "question_pause_seconds": 0,
+      "action_seconds": 3,
+      "estimated_seconds": 57.89925,
+      "measured_seconds": 57.89925,
+      "measured_start_seconds": 0.0,
+      "measured_end_seconds": 57.89925
+    },
+    {
+      "id": "scene-02",
+      "title": "The clue from our eyes",
+      "visual_2d": "A clean side-view brain diagram highlights the occipital lobe at the back while the other regions stay visible. A simple eyes-to-brain inset accompanies the ball replay. Keep Teo at the side of the diagram and use closed-mouth reaction holds during explanatory cutaways.",
+      "visual_3d": "A softly lit, simplified brain model turns to reveal the back. The occipital lobe receives a gentle outline; other regions retain low, steady connection activity. A floating inset shows eyes, information arrows, and the replayed ball without treating the brain as a movie screen.",
+      "lines": [
+        {
+          "id": "scene-02-line-01",
+          "speaker": "TEO",
+          "text": "There is the ball in our replay. I noticed its color, and I saw it coming toward me.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-02-line-02",
+          "speaker": "DANI",
+          "text": "Your eyes detect light. Information from your eyes reaches your brain. Areas in the occipital lobe, toward the back, help make sense of what you see.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-02-line-03",
+          "speaker": "TEO",
+          "text": "Occipital. That's a big name for a helpful teammate. I'll remember the back of our brain map.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-02-line-04",
+          "speaker": "DANI",
+          "text": "Seeing involves other areas, too. This highlight means we are looking here on our tour. It does not mean the rest of the brain has switched off.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-02-line-05",
+          "speaker": "TEO",
+          "text": "Our first clue is seeing the ball. Which lobe did we just visit that helps with seeing?",
+          "pause_after_seconds": 3,
+          "viewer_question_id": "q1",
+          "performance": "Look toward the viewer; ask warmly, then leave the full response pause. Do not rush or pretend to hear the viewer."
+        },
+        {
+          "id": "scene-02-line-06",
+          "speaker": "DANI",
+          "text": "The occipital lobe. If that name is new, you can point to the back of our map.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-02-line-07",
+          "speaker": "TEO",
+          "text": "Now I can see the ball. But I still need to work out where my hands should go.",
+          "pause_after_seconds": 0
+        }
+      ],
+      "action_beats": [
+        {
+          "after_line_id": "scene-02-line-04",
+          "seconds": 3,
+          "action": "Hold the labeled brain map and replay together so the viewer can locate the back of the brain.",
+          "sound": "A soft marker chime; music lowers before the viewer question."
+        }
+      ],
+      "spoken_word_count": 140,
+      "question_pause_seconds": 3,
+      "action_seconds": 3,
+      "estimated_seconds": 59.072667,
+      "measured_seconds": 59.072667,
+      "measured_start_seconds": 57.89925,
+      "measured_end_seconds": 116.971917
+    },
+    {
+      "id": "scene-03",
+      "title": "Where are my hands?",
+      "visual_2d": "Highlight the parietal region toward the upper back of the side-view cerebrum. Beside it, draw Teo’s hands and the slowly replaying ball with distance markers. Use the same hand/body proportions as the approved Teo reference, and show touch information returning toward the brain. Include the new guided observation as its own visual beat: A guided observation: keep the simulated ball fixed while the two illustrated hands move closer together. Hold the changed gap long enough to compare it with the previous position. This is a separate diagram demonstration, not another live toss.",
+      "visual_3d": "Use a translucent teaching diagram beside Teo, with a parietal-region highlight and a separate hands-and-ball inset. Animate spatial markers moving with the ball. The body diagram stays abstract and clearly distinct from Teo’s clothing or skin. Include the new guided observation as its own visual beat: A guided observation: keep the simulated ball fixed while the two illustrated hands move closer together. Hold the changed gap long enough to compare it with the previous position. This is a separate diagram demonstration, not another live toss.",
+      "lines": [
+        {
+          "id": "scene-03-line-01",
+          "speaker": "TEO",
+          "text": "In the replay, my hands were a little too far apart. The ball found the gap. Very sneaky, ball.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-03-line-02",
+          "speaker": "DANI",
+          "text": "The parietal lobe helps process touch and information about where your body is. Working with other areas, it helps relate your hands to things around you.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-03-line-03",
+          "speaker": "TEO",
+          "text": "So the clue is not just ball over there. It is ball over there, hands over here, and a gap between them.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-03-line-04",
+          "speaker": "DANI",
+          "text": "Exactly. Your body also sends information back as you move. There is a lot of communication going on.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-03-extra-01",
+          "speaker": "TEO",
+          "text": "Let's test our clue without throwing anything. Watch the two hands on the screen. First they're wide apart. Now they move closer together. The ball stays in the same place while the space around it changes.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-03-extra-02",
+          "speaker": "DANI",
+          "text": "That comparison matters. Your brain combines information about your body and the things nearby. It keeps updating as you move, instead of saving one picture and hoping nothing changes.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-03-extra-03",
+          "speaker": "TEO",
+          "text": "Like keeping a map up to date. The ball has not moved, but the gap has.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-03-line-05",
+          "speaker": "TEO",
+          "text": "Which lobe helps us work out where our hands are compared with the ball?",
+          "pause_after_seconds": 3,
+          "viewer_question_id": "q2",
+          "performance": "Look toward the viewer; ask warmly, then leave the full response pause. Do not rush or pretend to hear the viewer."
+        },
+        {
+          "id": "scene-03-line-06",
+          "speaker": "DANI",
+          "text": "The parietal lobe, working with its teammates. You can find it toward the upper back of our map.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-03-line-07",
+          "speaker": "TEO",
+          "text": "I'm getting the picture. Seeing the ball and knowing where my hands are have to work together. No more giant gap.",
+          "pause_after_seconds": 0
+        }
+      ],
+      "action_beats": [
+        {
+          "after_line_id": "scene-03-line-03",
+          "seconds": 3,
+          "action": "The hand markers move closer together around the replayed ball; no live ball is thrown during this explanation.",
+          "sound": "Two soft positioning clicks; no success buzzer or alarm."
+        },
+        {
+          "after_line_id": "scene-03-extra-01",
+          "seconds": 2,
+          "action": "A guided observation: keep the simulated ball fixed while the two illustrated hands move closer together. Hold the changed gap long enough to compare it with the previous position. This is a separate diagram demonstration, not another live toss.",
+          "sound": "Two quiet positioning clicks; no new speech or countdown."
+        }
+      ],
+      "spoken_word_count": 219,
+      "question_pause_seconds": 3,
+      "action_seconds": 5,
+      "estimated_seconds": 98.575208,
+      "measured_seconds": 98.575208,
+      "measured_start_seconds": 116.971917,
+      "measured_end_seconds": 215.547125
+    },
+    {
+      "id": "scene-04",
+      "title": "Listen to the clue",
+      "visual_2d": "Draw a small intercom speaker and gentle sound-wave marks, followed by a temporal-lobe highlight at the side of the cerebrum. Keep the brain map visible beside the ball replay. The scene’s teaching cue also appears as readable text so understanding does not depend on hearing alone.",
+      "visual_3d": "Show the studio intercom with a small light, then a side-view brain model highlighting the temporal lobe. Soft translucent sound-wave graphics stay in the teaching display. Put the same short cue on the display as text.",
+      "lines": [
+        {
+          "id": "scene-04-line-01",
+          "speaker": "DANI",
+          "text": "Ready, Teo. Here comes the ball. That is the cue you heard before our first toss.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-04-line-02",
+          "speaker": "TEO",
+          "text": "I remember. That sound told me to pay attention. I was ready in my head. My hands were still working on it.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-04-line-03",
+          "speaker": "DANI",
+          "text": "Areas in the temporal lobe, at the side of the brain, help process sounds. Some parts here also help with memory. Other regions join in, too.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-04-line-04",
+          "speaker": "TEO",
+          "text": "So my ears pick up sound, and my brain helps me make sense of it.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-04-line-05",
+          "speaker": "DANI",
+          "text": "Yes. And you can catch a ball without hearing this cue. Different situations use different information.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-04-line-06",
+          "speaker": "TEO",
+          "text": "Which lobe on our map helps process the sound of Dani speaking?",
+          "pause_after_seconds": 3,
+          "viewer_question_id": "q3",
+          "performance": "Look toward the viewer; ask warmly, then leave the full response pause. Do not rush or pretend to hear the viewer."
+        },
+        {
+          "id": "scene-04-line-07",
+          "speaker": "DANI",
+          "text": "The temporal lobe. Think of the side of our map. You can use the label while you learn the name.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-04-line-08",
+          "speaker": "TEO",
+          "text": "Clue collected. Now for the plan: how do I get my hands ready?",
+          "pause_after_seconds": 0
+        }
+      ],
+      "action_beats": [
+        {
+          "after_line_id": "scene-04-line-05",
+          "seconds": 3,
+          "action": "Hold the intercom cue as text, with the temporal label and side-view map remaining visible.",
+          "sound": "Replay Dani’s cue only as spoken in the first line; a restrained intercom click, without an extra unscripted voice."
+        }
+      ],
+      "spoken_word_count": 140,
+      "question_pause_seconds": 3,
+      "action_seconds": 3,
+      "estimated_seconds": 59.422583,
+      "measured_seconds": 59.422583,
+      "measured_start_seconds": 215.547125,
+      "measured_end_seconds": 274.969708
+    },
+    {
+      "id": "scene-05",
+      "title": "Make a plan",
+      "visual_2d": "Highlight the frontal lobe at the front of the map. A simple planning inset shows hands moving to a comfortable catching position. Connections to the other regions remain present. Avoid a boss character, command throne, or one-way lobe sequence.",
+      "visual_3d": "Frame Teo beside the front of the projected brain model, then cut to a teaching inset of hands preparing for a gentle catch. Frontal and other regions show overlapping communication; lighting does not suggest that one region controls every process.",
+      "lines": [
+        {
+          "id": "scene-05-line-01",
+          "speaker": "TEO",
+          "text": "My plan is to watch the ball and bring my hands together where it is going. No dramatic diving. This is a gentle toss.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-05-line-02",
+          "speaker": "DANI",
+          "text": "Areas in the frontal lobe help plan actions and control voluntary movements, the movements you choose to make.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-05-line-03",
+          "speaker": "TEO",
+          "text": "Like choosing to reach for the ball instead of letting it visit the floor again.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-05-line-04",
+          "speaker": "DANI",
+          "text": "Right. The frontal lobe works with many other areas. There is no tiny person in your brain giving every order.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-05-line-05",
+          "speaker": "TEO",
+          "text": "Which lobe at the front helps plan actions and control the movements we choose?",
+          "pause_after_seconds": 3,
+          "viewer_question_id": "q4",
+          "performance": "Look toward the viewer; ask warmly, then leave the full response pause. Do not rush or pretend to hear the viewer."
+        },
+        {
+          "id": "scene-05-line-06",
+          "speaker": "DANI",
+          "text": "The frontal lobe. If you pointed to the front of our map, you found it.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-05-line-07",
+          "speaker": "TEO",
+          "text": "Four lobes, four stops on our tour. But our brain does not wait for a tour guide to finish talking before it works.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-05-line-08",
+          "speaker": "DANI",
+          "text": "Thankfully. These regions communicate and cooperate. Our visits are not a list of steps every signal must follow.",
+          "pause_after_seconds": 0
+        }
+      ],
+      "action_beats": [
+        {
+          "after_line_id": "scene-05-line-04",
+          "seconds": 3,
+          "action": "Hold a plan card showing an open, comfortable hand position beside the ball’s short, gentle arc.",
+          "sound": "A small pencil-like sketch sound; warm music continues quietly."
+        }
+      ],
+      "spoken_word_count": 147,
+      "question_pause_seconds": 3,
+      "action_seconds": 3,
+      "estimated_seconds": 66.047958,
+      "measured_seconds": 66.047958,
+      "measured_start_seconds": 274.969708,
+      "measured_end_seconds": 341.017667
+    },
+    {
+      "id": "scene-06",
+      "title": "The rest of the movement team",
+      "visual_2d": "Reveal the cerebellum below and behind the cerebrum, anatomically distinct. Beside it, use a simple body diagram showing the spinal cord, arm nerves, and muscles. Paired arrow paths represent movement signals and sensory feedback without implying every pathway is identical. Include the new guided observation as its own visual beat: A guided observation: keep the gold movement-signal route and green returning-information route visible together. Let a marker move along each at the same time, then hold both labels for comparison.",
+      "visual_3d": "Rotate the model enough to reveal the cerebellum at the lower back while keeping the brainstem and spinal cord distinguishable. A separate simplified body projection connects spinal cord, nerves, and arm muscles. Show feedback arrows as well as outward movement signals. Include the new guided observation as its own visual beat: A guided observation: keep the gold movement-signal route and green returning-information route visible together. Let a marker move along each at the same time, then hold both labels for comparison.",
+      "lines": [
+        {
+          "id": "scene-06-line-01",
+          "speaker": "TEO",
+          "text": "Wait. There is another part tucked underneath at the back. We haven't met everybody.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-06-line-02",
+          "speaker": "DANI",
+          "text": "That is the cerebellum. It helps coordinate movements and their timing. It also helps us learn from practice.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-06-line-03",
+          "speaker": "TEO",
+          "text": "That sounds useful for getting both hands to the same appointment with the ball.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-06-line-04",
+          "speaker": "DANI",
+          "text": "Very useful. Movement signals travel through the spinal cord and nerves to muscles in your arms and hands. Your muscles pull to move your body.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-06-line-05",
+          "speaker": "TEO",
+          "text": "And information from my body travels back, too. This team keeps in touch.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-06-line-06",
+          "speaker": "DANI",
+          "text": "Yes. The brain and body work together. The cerebellum is part of that team, not a guarantee that every catch will work.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-06-extra-01",
+          "speaker": "TEO",
+          "text": "Let's follow both directions on our diagram. The gold path shows movement signals going toward the arm. The green path shows information coming back.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-06-extra-02",
+          "speaker": "DANI",
+          "text": "That return information helps the nervous system keep track of what is happening. These lines are teaching symbols, not two glowing strings inside you. Real nerves contain many fibers carrying signals.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-06-extra-03",
+          "speaker": "TEO",
+          "text": "So catching is not just sending one command and walking away. The team keeps checking in.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-06-extra-04",
+          "speaker": "DANI",
+          "text": "Exactly. Practice gives that team more chances to learn how a movement went.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-06-line-07",
+          "speaker": "TEO",
+          "text": "Which part we just met helps coordinate movements and their timing?",
+          "pause_after_seconds": 3,
+          "viewer_question_id": "q5",
+          "performance": "Look toward the viewer; ask warmly, then leave the full response pause. Do not rush or pretend to hear the viewer."
+        },
+        {
+          "id": "scene-06-line-08",
+          "speaker": "DANI",
+          "text": "The cerebellum. It is the smaller, folded part at the lower back of our brain model.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-06-line-09",
+          "speaker": "TEO",
+          "text": "Missing one catch does not mean the team is broken. We can learn with practice.",
+          "pause_after_seconds": 0
+        }
+      ],
+      "action_beats": [
+        {
+          "after_line_id": "scene-06-line-04",
+          "seconds": 3,
+          "action": "Trace one simplified movement route to the arm and one feedback route returning from the body; keep both labels readable.",
+          "sound": "A quiet traveling tone in each direction, without a racing or emergency effect."
+        },
+        {
+          "after_line_id": "scene-06-extra-01",
+          "seconds": 2,
+          "action": "A guided observation: keep the gold movement-signal route and green returning-information route visible together. Let a marker move along each at the same time, then hold both labels for comparison.",
+          "sound": "A quiet pair of traveling tones under the visual comparison; no new speech."
+        }
+      ],
+      "spoken_word_count": 232,
+      "question_pause_seconds": 3,
+      "action_seconds": 5,
+      "estimated_seconds": 111.7625,
+      "measured_seconds": 111.7625,
+      "measured_start_seconds": 341.017667,
+      "measured_end_seconds": 452.780167
+    },
+    {
+      "id": "scene-07",
+      "title": "Meet the tiny teammates",
+      "visual_2d": "A display labeled “CELL GUIDE PROGRAMS — ENLARGED MODELS” introduces a branching neuron, an astrocyte with many processes, and a small branching microglial cell. These are provisional educational diagrams, not newly locked mascot designs. The microglial inset shows a separate slow process of engulfing cellular debris, unrelated to the catch.",
+      "visual_3d": "Present three clearly labeled enlarged cell models inside the simulation display. Use a branching neuron, many-process astrocyte, and branching microglial cell with restrained materials. Show a schematic debris-clearance inset; do not place debris across a signal path or imply an instant repair.",
+      "lines": [
+        {
+          "id": "scene-07-line-01",
+          "speaker": "TEO",
+          "text": "Our map is getting busy. Who's waving from that little screen?",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-07-line-02",
+          "speaker": "DANI",
+          "text": "Three guide programs, based on real kinds of brain cells. Real cells do not talk. We have enlarged these models so we can meet them.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-07-line-03",
+          "speaker": "NEURON_GUIDE",
+          "text": "I represent a neuron. Neurons send messages using electrical and chemical signals. Lots of us connect into networks.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-07-line-04",
+          "speaker": "TEO",
+          "text": "A whole team of tiny message senders. Now the connections on our map make sense.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-07-line-05",
+          "speaker": "ASTROCYTE_GUIDE",
+          "text": "I represent an astrocyte. Astrocytes support neurons and help keep conditions around them working well.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-07-line-06",
+          "speaker": "MICROGLIA_GUIDE",
+          "text": "I represent a microglial cell. Microglia are immune cells. We help watch for trouble and clear away damaged material.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-07-line-07",
+          "speaker": "TEO",
+          "text": "So you do not rush in and fix a missed catch.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-07-line-08",
+          "speaker": "MICROGLIA_GUIDE",
+          "text": "No. Clearing cellular debris is a different job. Your practice catch belongs to the movement team.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-07-line-09",
+          "speaker": "DANI",
+          "text": "These are just three kinds of cells. There are many more teammates to discover.",
+          "pause_after_seconds": 0
+        }
+      ],
+      "action_beats": [
+        {
+          "after_line_id": "scene-07-line-06",
+          "seconds": 3,
+          "action": "Hold all three labeled cell models together, then let the small debris inset complete its clearly schematic action.",
+          "sound": "Three gentle, distinct character entrance notes; the debris inset has no crunch or gross sound."
+        }
+      ],
+      "spoken_word_count": 144,
+      "question_pause_seconds": 0,
+      "action_seconds": 3,
+      "estimated_seconds": 72.747917,
+      "measured_seconds": 72.747917,
+      "measured_start_seconds": 452.780167,
+      "measured_end_seconds": 525.528083
+    },
+    {
+      "id": "scene-08",
+      "title": "One catch, a whole team",
+      "visual_2d": "Return to the original lab staging and locked 2D Teo. Dani gently tosses the same soft ball from offscreen; Teo catches it without a jump or dive. During the catch, show a simplified inset with several brain regions, spinal cord, nerves, and muscles communicating together. End with Teo’s closed-mouth approved smile and the episode title.",
+      "visual_3d": "Return to the matching 3D lab staging, same ball, framing, and timing. Use a hands-and-ball insert for the gentle catch. The projected team diagram shows overlapping communication rather than a sequential tour. End in a stable front or three-quarter pose that preserves the approved Teo identity and closed-mouth smile.",
+      "lines": [
+        {
+          "id": "scene-08-line-01",
+          "speaker": "TEO",
+          "text": "I'm ready for another gentle try. Ball, please keep your appointment with my hands.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-08-line-02",
+          "speaker": "DANI",
+          "text": "Here it comes.",
+          "pause_after_seconds": 0
+        },
+        {
+          "speaker": "DANI",
+          "text": "Nice catch, Teo. And if it had fallen, we could simply try again.",
+          "pause_after_seconds": 0,
+          "id": "scene-08-line-03"
+        },
+        {
+          "id": "scene-08-line-04",
+          "speaker": "TEO",
+          "text": "We saw the ball, worked out where it was, planned a movement, and coordinated our hands. My nerves and muscles helped make it happen.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-08-line-05",
+          "speaker": "DANI",
+          "text": "And you heard my cue. Different brain regions and your body were working together, with information moving between them.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-08-line-06",
+          "speaker": "TEO",
+          "text": "Did one part make that catch happen, or did lots of parts work together?",
+          "pause_after_seconds": 3,
+          "viewer_question_id": "q6",
+          "performance": "Look toward the viewer; ask warmly, then leave the full response pause. Do not rush or pretend to hear the viewer."
+        },
+        {
+          "id": "scene-08-line-07",
+          "speaker": "DANI",
+          "text": "Lots of parts, working together. That is our brain team challenge solved.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-08-line-08",
+          "speaker": "TEO",
+          "text": "One catch. A whole team. You can keep being a brain detective just by watching everyday actions.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-08-line-09",
+          "speaker": "DANI",
+          "text": "If you try a gentle soft-ball catch later, ask a trusted grown-up and choose a clear space. Watching is fine, too.",
+          "pause_after_seconds": 0
+        },
+        {
+          "id": "scene-08-line-10",
+          "speaker": "TEO",
+          "text": "Thanks for exploring with me. Next time, another brain mystery.",
+          "pause_after_seconds": 0
+        }
+      ],
+      "action_beats": [
+        {
+          "after_line_id": "scene-08-line-02",
+          "seconds": 3,
+          "action": "Play the gentle catch once in full; keep the team inset active in overlapping patterns. Do not make success depend on every region lighting up in a fixed order.",
+          "sound": "A soft catch sound, a small warm musical lift, then room for the recap."
+        }
+      ],
+      "spoken_word_count": 147,
+      "question_pause_seconds": 3,
+      "action_seconds": 3,
+      "estimated_seconds": 70.440542,
+      "measured_seconds": 70.440542,
+      "measured_start_seconds": 525.528083,
+      "measured_end_seconds": 595.968625
+    }
+  ]
+}

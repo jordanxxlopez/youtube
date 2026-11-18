@@ -23,3 +23,11 @@ references; use the original artwork when an identical image is needed.
 Both PNGs are the unchanged approved originals at 1024 × 1536 pixels. The 3D
 reference is an image; this repository does not yet contain a 3D model or rig.
 Save future derivatives separately and keep these masters unchanged.
+
+## Episode 1 — in production
+
+[The Brain Team Challenge](episodes/episode-01/README.md) is planned as a
+ten-minute episode in each approved visual style. The production package
+contains the script, science notes, measured dialogue timing, and captions.
+The full animated films are not yet rendered; short motion and speech tests
+are development shots, not the completed episode.

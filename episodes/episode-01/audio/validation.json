@@ -1,0 +1,28 @@
+{
+  "duration_seconds": 595.968625,
+  "runtime": "9:55.969",
+  "sample_rate": 24000,
+  "dialogue_lines": 72,
+  "spoken_word_count": 1306,
+  "scenes": 8,
+  "viewer_pauses": 6,
+  "authored_hold_seconds": 46,
+  "unplanned_padding_seconds": 0,
+  "caption_cues": 124,
+  "peak_amplitude": 0.719970703125,
+  "rms": 0.09448054666287208,
+  "delivery_plan": {
+    "target_video_seconds": 600,
+    "fps": 24,
+    "total_video_frames": 14400,
+    "voice_end_seconds": 595.968625,
+    "endcard_start_seconds": 596.0,
+    "endcard_seconds": 4.0,
+    "transition_after_voice_seconds": 0.031375000000025466,
+    "purpose": "A four-second closing credit card; dialogue is neither stretched nor padded.",
+    "status": "Timing plan only; this check does not assert a finished video exists."
+  },
+  "checks": "PASS: source hash and exact line text/order; duration; six question pauses; scene WAV durations; nonzero unclipped audio; caption layout; exact 600-second frame budget.",
+  "review_limit": "Performance quality and visual lip sync require review. Full-episode caption subdivisions remain estimates within measured dialogue lines.",
+  "pronunciation_correction": "Explicit IPA overrides follow the script guide for occipital, parietal, cerebrum, cerebellum, neuron(s), astrocyte(s), microglia and microglial."
+}

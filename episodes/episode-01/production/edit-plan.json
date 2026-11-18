@@ -1,0 +1,946 @@
+{
+  "schema_version": 2,
+  "episode_id": "episode-01",
+  "status": "awaiting complete verified character performances",
+  "title": "The Brain Team Challenge",
+  "duration_seconds": 600.0,
+  "story_duration_seconds": 595.968625,
+  "story_picture_end_seconds": 596.0,
+  "subframe_transition_seconds": 0.031375,
+  "end_credit_seconds": 4.0,
+  "frame_rate": 24,
+  "width": 1280,
+  "height": 720,
+  "timing_source": "audio/timeline.json",
+  "timeline_sha256": "214dd957c2fcc1f8be4d1908405e62e8af7a6c843f6458f270c13e4544b834e6",
+  "audio": "audio/episode-01-dialogue.wav",
+  "captions": "captions/episode-01.en.srt",
+  "scope": "production/render-scope.json",
+  "performance_sidecar_contract": {
+    "path": "motion/{style}/{shot_id}.json, alongside the matching MP4",
+    "status": "verified_performance",
+    "timeline_sha256": "Must match this plan",
+    "voice_sha256": "Must match this plan",
+    "shot_id": "Must match the scope",
+    "scene_start_seconds": "Must match exact scene-relative shot timing",
+    "duration_seconds": "Must cover the shot at original playback speed",
+    "reviewed": "All required_reviews in render-scope.json must be true after actual inspection",
+    "note": "Silent opening tests do not satisfy speaking shots. Never set review flags just to bypass missing performance."
+  },
+  "principles": [
+    "Exactly 600 seconds for each finished version",
+    "Every planned character shot is required, not silently replaced by diagrams",
+    "No time stretching, repeated character loops, or frozen faces under speech",
+    "Use continuous measured diagram time under science cutaways",
+    "Preserve six viewer response pauses",
+    "Keep approved canonical master PNGs unchanged"
+  ],
+  "missing_required_inputs": [
+    "diagrams/2d/scene-01.mp4",
+    "motion/2d/scene-01-shot-01.mp4",
+    "motion/2d/scene-01-shot-02.mp4",
+    "motion/2d/scene-01-shot-03.mp4",
+    "motion/2d/scene-01-shot-06.mp4",
+    "motion/2d/scene-01-shot-08.mp4",
+    "diagrams/2d/scene-02.mp4",
+    "motion/2d/scene-02-shot-01.mp4",
+    "motion/2d/scene-02-shot-03.mp4",
+    "motion/2d/scene-02-shot-06.mp4",
+    "motion/2d/scene-02-shot-07.mp4",
+    "motion/2d/scene-02-shot-09.mp4",
+    "diagrams/2d/scene-03.mp4",
+    "motion/2d/scene-03-shot-01.mp4",
+    "motion/2d/scene-03-shot-03.mp4",
+    "motion/2d/scene-03-shot-09.mp4",
+    "motion/2d/scene-03-shot-10.mp4",
+    "motion/2d/scene-03-shot-11.mp4",
+    "motion/2d/scene-03-shot-13.mp4",
+    "diagrams/2d/scene-04.mp4",
+    "motion/2d/scene-04-shot-02.mp4",
+    "motion/2d/scene-04-shot-04.mp4",
+    "motion/2d/scene-04-shot-07.mp4",
+    "motion/2d/scene-04-shot-08.mp4",
+    "motion/2d/scene-04-shot-10.mp4",
+    "diagrams/2d/scene-05.mp4",
+    "motion/2d/scene-05-shot-01.mp4",
+    "motion/2d/scene-05-shot-03.mp4",
+    "motion/2d/scene-05-shot-06.mp4",
+    "motion/2d/scene-05-shot-07.mp4",
+    "motion/2d/scene-05-shot-09.mp4",
+    "diagrams/2d/scene-06.mp4",
+    "motion/2d/scene-06-shot-01.mp4",
+    "motion/2d/scene-06-shot-03.mp4",
+    "motion/2d/scene-06-shot-06.mp4",
+    "motion/2d/scene-06-shot-11.mp4",
+    "motion/2d/scene-06-shot-13.mp4",
+    "motion/2d/scene-06-shot-14.mp4",
+    "motion/2d/scene-06-shot-16.mp4",
+    "diagrams/2d/scene-07.mp4",
+    "motion/2d/scene-07-shot-01.mp4",
+    "motion/2d/scene-07-shot-03.mp4",
+    "motion/2d/scene-07-shot-04.mp4",
+    "motion/2d/scene-07-shot-05.mp4",
+    "motion/2d/scene-07-shot-06.mp4",
+    "motion/2d/scene-07-shot-08.mp4",
+    "motion/2d/scene-07-shot-09.mp4",
+    "diagrams/2d/scene-08.mp4",
+    "motion/2d/scene-08-shot-01.mp4",
+    "motion/2d/scene-08-shot-02.mp4",
+    "motion/2d/scene-08-shot-05.mp4",
+    "motion/2d/scene-08-shot-07.mp4",
+    "motion/2d/scene-08-shot-08.mp4",
+    "motion/2d/scene-08-shot-10.mp4",
+    "motion/2d/scene-08-shot-12.mp4",
+    "production/endcards/2d.mp4",
+    "diagrams/3d/scene-01.mp4",
+    "motion/3d/scene-01-shot-01.mp4",
+    "motion/3d/scene-01-shot-02.mp4",
+    "motion/3d/scene-01-shot-03.mp4",
+    "motion/3d/scene-01-shot-06.mp4",
+    "motion/3d/scene-01-shot-08.mp4",
+    "diagrams/3d/scene-02.mp4",
+    "motion/3d/scene-02-shot-01.mp4",
+    "motion/3d/scene-02-shot-03.mp4",
+    "motion/3d/scene-02-shot-06.mp4",
+    "motion/3d/scene-02-shot-07.mp4",
+    "motion/3d/scene-02-shot-09.mp4",
+    "diagrams/3d/scene-03.mp4",
+    "motion/3d/scene-03-shot-01.mp4",
+    "motion/3d/scene-03-shot-03.mp4",
+    "motion/3d/scene-03-shot-09.mp4",
+    "motion/3d/scene-03-shot-10.mp4",
+    "motion/3d/scene-03-shot-11.mp4",
+    "motion/3d/scene-03-shot-13.mp4",
+    "diagrams/3d/scene-04.mp4",
+    "motion/3d/scene-04-shot-02.mp4",
+    "motion/3d/scene-04-shot-04.mp4",
+    "motion/3d/scene-04-shot-07.mp4",
+    "motion/3d/scene-04-shot-08.mp4",
+    "motion/3d/scene-04-shot-10.mp4",
+    "diagrams/3d/scene-05.mp4",
+    "motion/3d/scene-05-shot-01.mp4",
+    "motion/3d/scene-05-shot-03.mp4",
+    "motion/3d/scene-05-shot-06.mp4",
+    "motion/3d/scene-05-shot-07.mp4",
+    "motion/3d/scene-05-shot-09.mp4",
+    "diagrams/3d/scene-06.mp4",
+    "motion/3d/scene-06-shot-01.mp4",
+    "motion/3d/scene-06-shot-03.mp4",
+    "motion/3d/scene-06-shot-06.mp4",
+    "motion/3d/scene-06-shot-11.mp4",
+    "motion/3d/scene-06-shot-13.mp4",
+    "motion/3d/scene-06-shot-14.mp4",
+    "motion/3d/scene-06-shot-16.mp4",
+    "diagrams/3d/scene-07.mp4",
+    "motion/3d/scene-07-shot-01.mp4",
+    "motion/3d/scene-07-shot-03.mp4",
+    "motion/3d/scene-07-shot-04.mp4",
+    "motion/3d/scene-07-shot-05.mp4",
+    "motion/3d/scene-07-shot-06.mp4",
+    "motion/3d/scene-07-shot-08.mp4",
+    "motion/3d/scene-07-shot-09.mp4",
+    "diagrams/3d/scene-08.mp4",
+    "motion/3d/scene-08-shot-01.mp4",
+    "motion/3d/scene-08-shot-02.mp4",
+    "motion/3d/scene-08-shot-05.mp4",
+    "motion/3d/scene-08-shot-07.mp4",
+    "motion/3d/scene-08-shot-08.mp4",
+    "motion/3d/scene-08-shot-10.mp4",
+    "motion/3d/scene-08-shot-12.mp4",
+    "production/endcards/3d.mp4"
+  ],
+  "rejected_performance_inputs": [],
+  "styles": {
+    "2d": {
+      "output": "episode-01-2d-first-cut.mp4",
+      "scenes": [
+        {
+          "scene_id": "scene-01",
+          "title": "A catch becomes a mystery",
+          "timeline_start_seconds": 0.0,
+          "timeline_end_seconds": 57.89925,
+          "duration_seconds": 57.89925,
+          "video_frames": 1390,
+          "diagram": "diagrams/2d/scene-01.mp4",
+          "inserts": [],
+          "required_character_shots": [
+            {
+              "shot_id": "scene-01-shot-01",
+              "path": "motion/2d/scene-01-shot-01.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 8.346
+            },
+            {
+              "shot_id": "scene-01-shot-02",
+              "path": "motion/2d/scene-01-shot-02.mp4",
+              "visible_speaking": false,
+              "duration_seconds": 8.516667
+            },
+            {
+              "shot_id": "scene-01-shot-03",
+              "path": "motion/2d/scene-01-shot-03.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.322667
+            },
+            {
+              "shot_id": "scene-01-shot-06",
+              "path": "motion/2d/scene-01-shot-06.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.886
+            },
+            {
+              "shot_id": "scene-01-shot-08",
+              "path": "motion/2d/scene-01-shot-08.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.481958
+            }
+          ]
+        },
+        {
+          "scene_id": "scene-02",
+          "title": "The clue from our eyes",
+          "timeline_start_seconds": 57.89925,
+          "timeline_end_seconds": 116.971917,
+          "duration_seconds": 59.072667,
+          "video_frames": 1417,
+          "diagram": "diagrams/2d/scene-02.mp4",
+          "inserts": [],
+          "required_character_shots": [
+            {
+              "shot_id": "scene-02-shot-01",
+              "path": "motion/2d/scene-02-shot-01.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 6.462
+            },
+            {
+              "shot_id": "scene-02-shot-03",
+              "path": "motion/2d/scene-02-shot-03.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 6.85
+            },
+            {
+              "shot_id": "scene-02-shot-06",
+              "path": "motion/2d/scene-02-shot-06.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 6.27
+            },
+            {
+              "shot_id": "scene-02-shot-07",
+              "path": "motion/2d/scene-02-shot-07.mp4",
+              "visible_speaking": false,
+              "duration_seconds": 3.0
+            },
+            {
+              "shot_id": "scene-02-shot-09",
+              "path": "motion/2d/scene-02-shot-09.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.628667
+            }
+          ]
+        },
+        {
+          "scene_id": "scene-03",
+          "title": "Where are my hands?",
+          "timeline_start_seconds": 116.971917,
+          "timeline_end_seconds": 215.547125,
+          "duration_seconds": 98.575208,
+          "video_frames": 2366,
+          "diagram": "diagrams/2d/scene-03.mp4",
+          "inserts": [],
+          "required_character_shots": [
+            {
+              "shot_id": "scene-03-shot-01",
+              "path": "motion/2d/scene-03-shot-01.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 7.538667
+            },
+            {
+              "shot_id": "scene-03-shot-03",
+              "path": "motion/2d/scene-03-shot-03.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 7.614
+            },
+            {
+              "shot_id": "scene-03-shot-09",
+              "path": "motion/2d/scene-03-shot-09.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.469333
+            },
+            {
+              "shot_id": "scene-03-shot-10",
+              "path": "motion/2d/scene-03-shot-10.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 4.736
+            },
+            {
+              "shot_id": "scene-03-shot-11",
+              "path": "motion/2d/scene-03-shot-11.mp4",
+              "visible_speaking": false,
+              "duration_seconds": 3.0
+            },
+            {
+              "shot_id": "scene-03-shot-13",
+              "path": "motion/2d/scene-03-shot-13.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 8.32
+            }
+          ]
+        },
+        {
+          "scene_id": "scene-04",
+          "title": "Listen to the clue",
+          "timeline_start_seconds": 215.547125,
+          "timeline_end_seconds": 274.969708,
+          "duration_seconds": 59.422583,
+          "video_frames": 1426,
+          "diagram": "diagrams/2d/scene-04.mp4",
+          "inserts": [],
+          "required_character_shots": [
+            {
+              "shot_id": "scene-04-shot-02",
+              "path": "motion/2d/scene-04-shot-02.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 8.245333
+            },
+            {
+              "shot_id": "scene-04-shot-04",
+              "path": "motion/2d/scene-04-shot-04.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 4.864
+            },
+            {
+              "shot_id": "scene-04-shot-07",
+              "path": "motion/2d/scene-04-shot-07.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 4.416
+            },
+            {
+              "shot_id": "scene-04-shot-08",
+              "path": "motion/2d/scene-04-shot-08.mp4",
+              "visible_speaking": false,
+              "duration_seconds": 3.0
+            },
+            {
+              "shot_id": "scene-04-shot-10",
+              "path": "motion/2d/scene-04-shot-10.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 4.741333
+            }
+          ]
+        },
+        {
+          "scene_id": "scene-05",
+          "title": "Make a plan",
+          "timeline_start_seconds": 274.969708,
+          "timeline_end_seconds": 341.017667,
+          "duration_seconds": 66.047958,
+          "video_frames": 1585,
+          "diagram": "diagrams/2d/scene-05.mp4",
+          "inserts": [],
+          "required_character_shots": [
+            {
+              "shot_id": "scene-05-shot-01",
+              "path": "motion/2d/scene-05-shot-01.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 10.096625
+            },
+            {
+              "shot_id": "scene-05-shot-03",
+              "path": "motion/2d/scene-05-shot-03.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.354667
+            },
+            {
+              "shot_id": "scene-05-shot-06",
+              "path": "motion/2d/scene-05-shot-06.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.610667
+            },
+            {
+              "shot_id": "scene-05-shot-07",
+              "path": "motion/2d/scene-05-shot-07.mp4",
+              "visible_speaking": false,
+              "duration_seconds": 3.0
+            },
+            {
+              "shot_id": "scene-05-shot-09",
+              "path": "motion/2d/scene-05-shot-09.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 8.791333
+            }
+          ]
+        },
+        {
+          "scene_id": "scene-06",
+          "title": "The rest of the movement team",
+          "timeline_start_seconds": 341.017667,
+          "timeline_end_seconds": 452.780167,
+          "duration_seconds": 111.7625,
+          "video_frames": 2683,
+          "diagram": "diagrams/2d/scene-06.mp4",
+          "inserts": [],
+          "required_character_shots": [
+            {
+              "shot_id": "scene-06-shot-01",
+              "path": "motion/2d/scene-06-shot-01.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.769333
+            },
+            {
+              "shot_id": "scene-06-shot-03",
+              "path": "motion/2d/scene-06-shot-03.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.44
+            },
+            {
+              "shot_id": "scene-06-shot-06",
+              "path": "motion/2d/scene-06-shot-06.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.662667
+            },
+            {
+              "shot_id": "scene-06-shot-11",
+              "path": "motion/2d/scene-06-shot-11.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 6.979292
+            },
+            {
+              "shot_id": "scene-06-shot-13",
+              "path": "motion/2d/scene-06-shot-13.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 4.522667
+            },
+            {
+              "shot_id": "scene-06-shot-14",
+              "path": "motion/2d/scene-06-shot-14.mp4",
+              "visible_speaking": false,
+              "duration_seconds": 3.0
+            },
+            {
+              "shot_id": "scene-06-shot-16",
+              "path": "motion/2d/scene-06-shot-16.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 6.018
+            }
+          ]
+        },
+        {
+          "scene_id": "scene-07",
+          "title": "Meet the tiny teammates",
+          "timeline_start_seconds": 452.780167,
+          "timeline_end_seconds": 525.528083,
+          "duration_seconds": 72.747917,
+          "video_frames": 1746,
+          "diagram": "diagrams/2d/scene-07.mp4",
+          "inserts": [],
+          "required_character_shots": [
+            {
+              "shot_id": "scene-07-shot-01",
+              "path": "motion/2d/scene-07-shot-01.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 4.456667
+            },
+            {
+              "shot_id": "scene-07-shot-03",
+              "path": "motion/2d/scene-07-shot-03.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 9.000667
+            },
+            {
+              "shot_id": "scene-07-shot-04",
+              "path": "motion/2d/scene-07-shot-04.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 6.338
+            },
+            {
+              "shot_id": "scene-07-shot-05",
+              "path": "motion/2d/scene-07-shot-05.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 12.480667
+            },
+            {
+              "shot_id": "scene-07-shot-06",
+              "path": "motion/2d/scene-07-shot-06.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 10.783917
+            },
+            {
+              "shot_id": "scene-07-shot-08",
+              "path": "motion/2d/scene-07-shot-08.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 2.94
+            },
+            {
+              "shot_id": "scene-07-shot-09",
+              "path": "motion/2d/scene-07-shot-09.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 8.052667
+            }
+          ]
+        },
+        {
+          "scene_id": "scene-08",
+          "title": "One catch, a whole team",
+          "timeline_start_seconds": 525.528083,
+          "timeline_end_seconds": 595.968625,
+          "duration_seconds": 70.440542,
+          "video_frames": 1691,
+          "diagram": "diagrams/2d/scene-08.mp4",
+          "inserts": [],
+          "required_character_shots": [
+            {
+              "shot_id": "scene-08-shot-01",
+              "path": "motion/2d/scene-08-shot-01.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 6.466
+            },
+            {
+              "shot_id": "scene-08-shot-02",
+              "path": "motion/2d/scene-08-shot-02.mp4",
+              "visible_speaking": false,
+              "duration_seconds": 1.386667
+            },
+            {
+              "shot_id": "scene-08-shot-05",
+              "path": "motion/2d/scene-08-shot-05.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 10.267917
+            },
+            {
+              "shot_id": "scene-08-shot-07",
+              "path": "motion/2d/scene-08-shot-07.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.546667
+            },
+            {
+              "shot_id": "scene-08-shot-08",
+              "path": "motion/2d/scene-08-shot-08.mp4",
+              "visible_speaking": false,
+              "duration_seconds": 3.0
+            },
+            {
+              "shot_id": "scene-08-shot-10",
+              "path": "motion/2d/scene-08-shot-10.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 7.424
+            },
+            {
+              "shot_id": "scene-08-shot-12",
+              "path": "motion/2d/scene-08-shot-12.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 4.850667
+            }
+          ]
+        }
+      ],
+      "planned_character_motion_seconds": 286.948379,
+      "verified_character_motion_seconds": 0,
+      "end_card": {
+        "path": "production/endcards/2d.mp4",
+        "frames": 96,
+        "duration_seconds": 4.0,
+        "content": [
+          "The Brain Team Challenge",
+          "Science references: see episode notes",
+          "Original character design and episode production"
+        ]
+      }
+    },
+    "3d": {
+      "output": "episode-01-3d-first-cut.mp4",
+      "scenes": [
+        {
+          "scene_id": "scene-01",
+          "title": "A catch becomes a mystery",
+          "timeline_start_seconds": 0.0,
+          "timeline_end_seconds": 57.89925,
+          "duration_seconds": 57.89925,
+          "video_frames": 1390,
+          "diagram": "diagrams/3d/scene-01.mp4",
+          "inserts": [],
+          "required_character_shots": [
+            {
+              "shot_id": "scene-01-shot-01",
+              "path": "motion/3d/scene-01-shot-01.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 8.346
+            },
+            {
+              "shot_id": "scene-01-shot-02",
+              "path": "motion/3d/scene-01-shot-02.mp4",
+              "visible_speaking": false,
+              "duration_seconds": 8.516667
+            },
+            {
+              "shot_id": "scene-01-shot-03",
+              "path": "motion/3d/scene-01-shot-03.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.322667
+            },
+            {
+              "shot_id": "scene-01-shot-06",
+              "path": "motion/3d/scene-01-shot-06.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.886
+            },
+            {
+              "shot_id": "scene-01-shot-08",
+              "path": "motion/3d/scene-01-shot-08.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.481958
+            }
+          ]
+        },
+        {
+          "scene_id": "scene-02",
+          "title": "The clue from our eyes",
+          "timeline_start_seconds": 57.89925,
+          "timeline_end_seconds": 116.971917,
+          "duration_seconds": 59.072667,
+          "video_frames": 1417,
+          "diagram": "diagrams/3d/scene-02.mp4",
+          "inserts": [],
+          "required_character_shots": [
+            {
+              "shot_id": "scene-02-shot-01",
+              "path": "motion/3d/scene-02-shot-01.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 6.462
+            },
+            {
+              "shot_id": "scene-02-shot-03",
+              "path": "motion/3d/scene-02-shot-03.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 6.85
+            },
+            {
+              "shot_id": "scene-02-shot-06",
+              "path": "motion/3d/scene-02-shot-06.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 6.27
+            },
+            {
+              "shot_id": "scene-02-shot-07",
+              "path": "motion/3d/scene-02-shot-07.mp4",
+              "visible_speaking": false,
+              "duration_seconds": 3.0
+            },
+            {
+              "shot_id": "scene-02-shot-09",
+              "path": "motion/3d/scene-02-shot-09.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.628667
+            }
+          ]
+        },
+        {
+          "scene_id": "scene-03",
+          "title": "Where are my hands?",
+          "timeline_start_seconds": 116.971917,
+          "timeline_end_seconds": 215.547125,
+          "duration_seconds": 98.575208,
+          "video_frames": 2366,
+          "diagram": "diagrams/3d/scene-03.mp4",
+          "inserts": [],
+          "required_character_shots": [
+            {
+              "shot_id": "scene-03-shot-01",
+              "path": "motion/3d/scene-03-shot-01.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 7.538667
+            },
+            {
+              "shot_id": "scene-03-shot-03",
+              "path": "motion/3d/scene-03-shot-03.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 7.614
+            },
+            {
+              "shot_id": "scene-03-shot-09",
+              "path": "motion/3d/scene-03-shot-09.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.469333
+            },
+            {
+              "shot_id": "scene-03-shot-10",
+              "path": "motion/3d/scene-03-shot-10.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 4.736
+            },
+            {
+              "shot_id": "scene-03-shot-11",
+              "path": "motion/3d/scene-03-shot-11.mp4",
+              "visible_speaking": false,
+              "duration_seconds": 3.0
+            },
+            {
+              "shot_id": "scene-03-shot-13",
+              "path": "motion/3d/scene-03-shot-13.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 8.32
+            }
+          ]
+        },
+        {
+          "scene_id": "scene-04",
+          "title": "Listen to the clue",
+          "timeline_start_seconds": 215.547125,
+          "timeline_end_seconds": 274.969708,
+          "duration_seconds": 59.422583,
+          "video_frames": 1426,
+          "diagram": "diagrams/3d/scene-04.mp4",
+          "inserts": [],
+          "required_character_shots": [
+            {
+              "shot_id": "scene-04-shot-02",
+              "path": "motion/3d/scene-04-shot-02.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 8.245333
+            },
+            {
+              "shot_id": "scene-04-shot-04",
+              "path": "motion/3d/scene-04-shot-04.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 4.864
+            },
+            {
+              "shot_id": "scene-04-shot-07",
+              "path": "motion/3d/scene-04-shot-07.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 4.416
+            },
+            {
+              "shot_id": "scene-04-shot-08",
+              "path": "motion/3d/scene-04-shot-08.mp4",
+              "visible_speaking": false,
+              "duration_seconds": 3.0
+            },
+            {
+              "shot_id": "scene-04-shot-10",
+              "path": "motion/3d/scene-04-shot-10.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 4.741333
+            }
+          ]
+        },
+        {
+          "scene_id": "scene-05",
+          "title": "Make a plan",
+          "timeline_start_seconds": 274.969708,
+          "timeline_end_seconds": 341.017667,
+          "duration_seconds": 66.047958,
+          "video_frames": 1585,
+          "diagram": "diagrams/3d/scene-05.mp4",
+          "inserts": [],
+          "required_character_shots": [
+            {
+              "shot_id": "scene-05-shot-01",
+              "path": "motion/3d/scene-05-shot-01.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 10.096625
+            },
+            {
+              "shot_id": "scene-05-shot-03",
+              "path": "motion/3d/scene-05-shot-03.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.354667
+            },
+            {
+              "shot_id": "scene-05-shot-06",
+              "path": "motion/3d/scene-05-shot-06.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.610667
+            },
+            {
+              "shot_id": "scene-05-shot-07",
+              "path": "motion/3d/scene-05-shot-07.mp4",
+              "visible_speaking": false,
+              "duration_seconds": 3.0
+            },
+            {
+              "shot_id": "scene-05-shot-09",
+              "path": "motion/3d/scene-05-shot-09.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 8.791333
+            }
+          ]
+        },
+        {
+          "scene_id": "scene-06",
+          "title": "The rest of the movement team",
+          "timeline_start_seconds": 341.017667,
+          "timeline_end_seconds": 452.780167,
+          "duration_seconds": 111.7625,
+          "video_frames": 2683,
+          "diagram": "diagrams/3d/scene-06.mp4",
+          "inserts": [],
+          "required_character_shots": [
+            {
+              "shot_id": "scene-06-shot-01",
+              "path": "motion/3d/scene-06-shot-01.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.769333
+            },
+            {
+              "shot_id": "scene-06-shot-03",
+              "path": "motion/3d/scene-06-shot-03.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.44
+            },
+            {
+              "shot_id": "scene-06-shot-06",
+              "path": "motion/3d/scene-06-shot-06.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.662667
+            },
+            {
+              "shot_id": "scene-06-shot-11",
+              "path": "motion/3d/scene-06-shot-11.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 6.979292
+            },
+            {
+              "shot_id": "scene-06-shot-13",
+              "path": "motion/3d/scene-06-shot-13.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 4.522667
+            },
+            {
+              "shot_id": "scene-06-shot-14",
+              "path": "motion/3d/scene-06-shot-14.mp4",
+              "visible_speaking": false,
+              "duration_seconds": 3.0
+            },
+            {
+              "shot_id": "scene-06-shot-16",
+              "path": "motion/3d/scene-06-shot-16.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 6.018
+            }
+          ]
+        },
+        {
+          "scene_id": "scene-07",
+          "title": "Meet the tiny teammates",
+          "timeline_start_seconds": 452.780167,
+          "timeline_end_seconds": 525.528083,
+          "duration_seconds": 72.747917,
+          "video_frames": 1746,
+          "diagram": "diagrams/3d/scene-07.mp4",
+          "inserts": [],
+          "required_character_shots": [
+            {
+              "shot_id": "scene-07-shot-01",
+              "path": "motion/3d/scene-07-shot-01.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 4.456667
+            },
+            {
+              "shot_id": "scene-07-shot-03",
+              "path": "motion/3d/scene-07-shot-03.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 9.000667
+            },
+            {
+              "shot_id": "scene-07-shot-04",
+              "path": "motion/3d/scene-07-shot-04.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 6.338
+            },
+            {
+              "shot_id": "scene-07-shot-05",
+              "path": "motion/3d/scene-07-shot-05.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 12.480667
+            },
+            {
+              "shot_id": "scene-07-shot-06",
+              "path": "motion/3d/scene-07-shot-06.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 10.783917
+            },
+            {
+              "shot_id": "scene-07-shot-08",
+              "path": "motion/3d/scene-07-shot-08.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 2.94
+            },
+            {
+              "shot_id": "scene-07-shot-09",
+              "path": "motion/3d/scene-07-shot-09.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 8.052667
+            }
+          ]
+        },
+        {
+          "scene_id": "scene-08",
+          "title": "One catch, a whole team",
+          "timeline_start_seconds": 525.528083,
+          "timeline_end_seconds": 595.968625,
+          "duration_seconds": 70.440542,
+          "video_frames": 1691,
+          "diagram": "diagrams/3d/scene-08.mp4",
+          "inserts": [],
+          "required_character_shots": [
+            {
+              "shot_id": "scene-08-shot-01",
+              "path": "motion/3d/scene-08-shot-01.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 6.466
+            },
+            {
+              "shot_id": "scene-08-shot-02",
+              "path": "motion/3d/scene-08-shot-02.mp4",
+              "visible_speaking": false,
+              "duration_seconds": 1.386667
+            },
+            {
+              "shot_id": "scene-08-shot-05",
+              "path": "motion/3d/scene-08-shot-05.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 10.267917
+            },
+            {
+              "shot_id": "scene-08-shot-07",
+              "path": "motion/3d/scene-08-shot-07.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 5.546667
+            },
+            {
+              "shot_id": "scene-08-shot-08",
+              "path": "motion/3d/scene-08-shot-08.mp4",
+              "visible_speaking": false,
+              "duration_seconds": 3.0
+            },
+            {
+              "shot_id": "scene-08-shot-10",
+              "path": "motion/3d/scene-08-shot-10.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 7.424
+            },
+            {
+              "shot_id": "scene-08-shot-12",
+              "path": "motion/3d/scene-08-shot-12.mp4",
+              "visible_speaking": true,
+              "duration_seconds": 4.850667
+            }
+          ]
+        }
+      ],
+      "planned_character_motion_seconds": 286.948379,
+      "verified_character_motion_seconds": 0,
+      "end_card": {
+        "path": "production/endcards/3d.mp4",
+        "frames": 96,
+        "duration_seconds": 4.0,
+        "content": [
+          "The Brain Team Challenge",
+          "Science references: see episode notes",
+          "Original character design and episode production"
+        ]
+      }
+    }
+  },
+  "voice_sha256": "8835a7a7e513a619a0e80278c173e55183edbc0491231c3f077941a295d02c81"
+}
