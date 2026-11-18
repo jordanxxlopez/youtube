@@ -72,7 +72,8 @@
     "Long-line subdivision is an editorial proposal, not verified word-level alignment. Confirm chosen cut points by listening/forced alignment before paid lip jobs; adjust neighboring cut frames while keeping durations 3\u201310 seconds and full coverage.",
     "All six authored three-second viewer pauses remain intact inside their question shots. Two two-second observation beats join their preceding demonstrations.",
     "Final speech ends at 595.968625; the last story shot continues 0.031375 seconds to frame 14304, then exactly four seconds of credits.",
-    "No repeated short tests, frozen portraits, arbitrary filler, or voice time stretching. Generated-duration excess is discarded, not inserted into the runtime."
+    "No repeated short tests, frozen portraits, arbitrary filler, or voice time stretching. Generated-duration excess is discarded, not inserted into the runtime.",
+    "Before each lip-sync submission, trim/transcode the generated source to the exact planned frame count at 24 fps and extract matching master audio. Measure the actual uploaded media, including container padding: source video must be 2\u201310 seconds inclusive. A 10.041-second generated file is not a valid 10-second input; trim to 240 frames and verify duration. Do not shorten or stretch the final dialogue master."
   ],
   "script_review_notes": [
     {
@@ -341,7 +342,8 @@
       "outgoing_continuity": "Retain the final pose, eye line, camera side, lighting, physical-ball state, and projection configuration as references for the next shot. No identity/clothing changes.",
       "audio_treatment": "Use the uninterrupted existing dialogue master at these exact absolute times. Dani and cell-guide programs remain off-screen/source voices. Teo may listen silently during their lines; synchronize his visible speech only to his actual take.",
       "source_dialogue_review": [],
-      "render_status": "planned_not_generated"
+      "render_status": "planned_not_generated",
+      "starting_frame_requirement": "Derived full-body frame in the approved lab: Teo has both hands empty and ready to receive the toss; physical red ball begins off-screen left. The approved holding-ball frame cannot be used unchanged for this shot."
     },
     {
       "shot_id": "shot-002",
@@ -4082,5 +4084,7 @@
       "outgoing_continuity": "Finish exactly at frame 14400 / 600 seconds.",
       "render_status": "planned_not_generated"
     }
-  ]
+  ],
+  "asset_path_base": "All asset and timing paths resolve from the repository episodes/episode-01 directory, not this JSON file directory.",
+  "source_frame_preparation": "Create or select shot-specific starting frames from the canonical character and lab references. The opening reference is an identity/environment anchor, not a valid starting pose for every action. Match incoming pose, camera, eyeline and physical prop states; save derivatives separately from canonical masters."
 }

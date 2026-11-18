@@ -33,6 +33,20 @@ Teo walks between connected areas of the approved lab, reaches for and handles t
 
 Camera moves, medium/full-body speaking shots, reactions, and close object inserts are specified individually in [cinematic-shot-plan.json](cinematic-shot-plan.json). Every shot records action, camera, environment/prop continuity, source dialogue IDs, visible speaker, generation duration, and lip-processing need. The hologram is an object in the room; fixed portrait panels and lecture-slide staging are excluded.
 
+## Starting frames and lip-sync inputs
+
+Prepare starting frames for each shot from the approved character and lab
+references. The approved lab image shows Teo holding the ball; shot-001 instead
+requires empty hands awaiting a toss. Use a separate derivative with that
+starting pose, keeping the approved image unchanged. Match later starting
+frames to their incoming camera, pose, and prop states.
+
+All JSON asset paths resolve from the episode directory. Before lip sync, trim
+each generated source to its exact planned 24-fps frame count and extract the
+matching master-audio interval. Verify actual media duration and padding; a
+10.041-second container is not a valid ten-second input. Preserve the continuous
+master soundtrack without stretching it.
+
 ## Before a paid batch
 
 Review the simulation/screen/diagram wording in `scene-01-line-04`, `scene-03-extra-01`, `scene-06-extra-01`, and `scene-07-line-01` against the cinematic staging. An in-world projection may support the wording; any revised recording requires updating the timing. Retain the no-shrinking, guide-program, teaching-symbol, and overlapping-brain-activity science clarifications. No dialogue has been rewritten or rerecorded for this plan.
