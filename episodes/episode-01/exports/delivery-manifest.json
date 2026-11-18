@@ -1,5 +1,5 @@
 {
-  "status": "Two complete local illustrated first cuts exported",
+  "status": "User-rejected local cutout drafts; retained for provenance, not accepted deliverables",
   "method": "Original approved 2D and 3D-style artwork animated as cutout layers; no new character model",
   "external_video_generation_calls_for_these_exports": 0,
   "mouth_movement": "Rhubarb cues from the exact recorded dialogue, with interpolated mouth poses",
@@ -19,7 +19,9 @@
         1280,
         720
       ],
-      "chapters": 9
+      "chapters": 9,
+      "user_acceptance": "rejected",
+      "role": "Historical local draft; preserve file and hash, do not present as current or accepted."
     },
     {
       "file": "exports/episode-01-3d-style.mp4",
@@ -34,9 +36,26 @@
         1280,
         720
       ],
-      "chapters": 9
+      "chapters": 9,
+      "user_acceptance": "rejected",
+      "role": "Historical local draft; preserve file and hash, do not present as current or accepted."
     }
   ],
-  "review_scope": "Complete technical frame decode plus sampled final-frame checks. No claim of comprehensive human listening or precise perceptual lip-sync approval.",
-  "canonical_images_unchanged": true
+  "review_scope": "Historical technical frame decode and sampled final-frame checks only. These checks do not indicate creative acceptance; the user rejected both films. No claim of comprehensive human listening or precise perceptual lip-sync approval.",
+  "canonical_images_unchanged": true,
+  "user_acceptance": "rejected",
+  "rejection_date": "2026-11-18",
+  "rejection_reason": "User rejected the limited local cutout films and simulation/lecture-panel presentation; wants natural full-scene character acting matching the approved 3D speaking/walking test.",
+  "current_production_direction": "Full ten-minute cinematic episodes in approved 2D and stylized 3D, with natural speech, walking, gestures, prop interaction, and scene/voice continuity.",
+  "current_production_brief": "production/CINEMATIC_BRIEF.md",
+  "current_cinematic_episodes_rendered": false,
+  "approved_benchmark": {
+    "model": "Kling O3 Pro",
+    "task_id": "ca5e3633-9648-452e-9a07-8818a275344b",
+    "video": "motion/3d/performance-test.mp4",
+    "scene_reference": "keyframes/opening-3d.png",
+    "scope": "Approved acting/staging benchmark; not a full episode, replacement canonical character, or selection of the full-production provider."
+  },
+  "additional_paid_generations_in_cinematic_research_pass": 0,
+  "replacement_service_purchase_budget": null
 }

@@ -25,9 +25,20 @@ fresh image generation can produce pixel-identical copies.
 
 ## Current episode production direction
 
-The user explicitly requested using the existing approved 2D and 3D character
-artwork and local methods, without Runway or another external video-generation
-service. Use the local animation pipeline for Episode 1. Do not replace Teo
-with a newly designed or newly modeled character. The shaded output is animated
-3D-style artwork; describe it accurately. The full deliverable remains ten
-minutes in each style. Short internal technical checks are not the deliverable.
+The user's latest direction supersedes the earlier local-only method: use the
+existing approved 2D and 3D character designs in fluid, cinematic scene acting.
+The user rejected the local cutout/presenter exports. Retain them as rejected
+prototypes, not approved deliverables or the production template.
+
+Read `episodes/episode-01/production/CINEMATIC_BRIEF.md`. The existing Kling O3
+Pro performance test is the visual and motion benchmark. Teo must move through
+environments, interact with props, and speak with synchronized mouth movement
+and expressive prosody. The approved lab and its in-world brain hologram remain
+valid scene references. Preserve the canonical character images unchanged.
+
+The user authorized researching alternative AI-video services and plugins.
+Assess access, controls, and cost before launching a new paid production batch;
+research authorization alone is not authorization to buy credits/subscriptions.
+The deliverables remain two complete ten-minute films, one in each approved
+style. Individual short shots or tests are production components, not the full
+deliverable. Do not describe a 3D-style image/video as an editable 3D model.

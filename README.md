@@ -24,13 +24,17 @@ Both PNGs are the unchanged approved originals at 1024 × 1536 pixels. The 3D
 reference is an image; this repository does not yet contain a 3D model or rig.
 Save future derivatives separately and keep these masters unchanged.
 
-## Episode 1 — local animation
+## Episode 1 — cinematic animation in production
 
-[The Brain Team Challenge](episodes/episode-01/README.md) has a complete
-600-second edit in each approved appearance. The production method animates
-the existing artwork locally with recorded dialogue, mouth cues, modest body
-motion, progressing science diagrams, and English captions. The shaded version
-is animated 3D-style artwork, not a new 3D model.
+[The Brain Team Challenge](episodes/episode-01/README.md) is intended as two
+complete ten-minute animated films, using the approved 2D and stylized 3D looks.
+The user selected the existing Kling O3 Pro scene performance as the benchmark:
+Teo acts naturally within environments, walks, handles props, and speaks with
+synchronized mouth movement and expressive delivery. See the
+[cinematic production brief](episodes/episode-01/production/CINEMATIC_BRIEF.md).
 
-[Local rendering instructions](episodes/episode-01/animation/README.md) explain
-how to reproduce the two playback files. The approved masters remain unchanged.
+Two 600-second local cutout drafts exist, but **the user rejected their visual
+and animation approach**. They do not fulfill the cinematic requirement. Their
+[reproduction instructions](episodes/episode-01/animation/README.md) and files
+are retained as prototype history. The requested cinematic films are not yet
+complete. The approved character masters remain unchanged.
