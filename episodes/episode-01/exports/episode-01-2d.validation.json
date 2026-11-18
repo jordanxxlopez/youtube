@@ -1,0 +1,69 @@
+{
+  "status": "Rendered and fully decoded; sampled visual review completed",
+  "file": "exports/episode-01-2d.mp4",
+  "sha256": "68a82524a5e530779132b1b3f6fad2b2ff320a166e81b7dc2f12394bcf3d3f20",
+  "bytes": 29443623,
+  "duration_seconds": 600.0,
+  "frames": 14400,
+  "decoded_frames": 14400,
+  "frame_rate": "24/1",
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "audio_duration_seconds": 600.0,
+  "size": [
+    1280,
+    720
+  ],
+  "chapters": 9,
+  "burned_english_captions": true,
+  "sources": [
+    {
+      "path": "animation/rendered/2d/scene-01.mp4",
+      "frames_used": 1390,
+      "frames_available": 1390
+    },
+    {
+      "path": "animation/rendered/2d/scene-02.mp4",
+      "frames_used": 1417,
+      "frames_available": 1418
+    },
+    {
+      "path": "animation/rendered/2d/scene-03.mp4",
+      "frames_used": 2366,
+      "frames_available": 2366
+    },
+    {
+      "path": "animation/rendered/2d/scene-04.mp4",
+      "frames_used": 1426,
+      "frames_available": 1427
+    },
+    {
+      "path": "animation/rendered/2d/scene-05.mp4",
+      "frames_used": 1585,
+      "frames_available": 1586
+    },
+    {
+      "path": "animation/rendered/2d/scene-06.mp4",
+      "frames_used": 2683,
+      "frames_available": 2683
+    },
+    {
+      "path": "animation/rendered/2d/scene-07.mp4",
+      "frames_used": 1746,
+      "frames_available": 1746
+    },
+    {
+      "path": "animation/rendered/2d/scene-08.mp4",
+      "frames_used": 1691,
+      "frames_available": 1691
+    }
+  ],
+  "visual_review": {
+    "status": "Completed for ten sampled final frames",
+    "report": "exports/qc/2d/review.json",
+    "contact_sheet": "exports/qc/2d/contact-sheet.jpg",
+    "findings": "Readable headings, science diagrams and captions; character artwork retains its approved appearance in sampled frames; captions fit the reserved lower strip without overlap; no clipped titles or credits observed in these samples."
+  },
+  "lip_sync_review": "Mouth animation uses Rhubarb timing from the unchanged dialogue source; isolated still-frame review does not establish precise perceptual lip sync or naturalness.",
+  "audio_review": "Master measured -16.01 LUFS and -1.5 dBTP; dialogue was not time stretched. Auditory review unavailable in this tool session."
+}

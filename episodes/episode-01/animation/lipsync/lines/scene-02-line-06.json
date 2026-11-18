@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "soundFile": "/workspace/youtube/episodes/episode-01/audio/lines/scene-02-line-06.wav",
+    "duration": 5.93
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.30, "value": "B" },
+    { "start": 0.30, "end": 0.44, "value": "D" },
+    { "start": 0.44, "end": 0.58, "value": "C" },
+    { "start": 0.58, "end": 0.93, "value": "B" },
+    { "start": 0.93, "end": 1.07, "value": "E" },
+    { "start": 1.07, "end": 1.14, "value": "F" },
+    { "start": 1.14, "end": 1.49, "value": "E" },
+    { "start": 1.49, "end": 1.66, "value": "A" },
+    { "start": 1.66, "end": 2.25, "value": "X" },
+    { "start": 2.25, "end": 2.30, "value": "B" },
+    { "start": 2.30, "end": 2.42, "value": "G" },
+    { "start": 2.42, "end": 2.49, "value": "C" },
+    { "start": 2.49, "end": 2.63, "value": "B" },
+    { "start": 2.63, "end": 2.84, "value": "C" },
+    { "start": 2.84, "end": 2.91, "value": "B" },
+    { "start": 2.91, "end": 2.99, "value": "A" },
+    { "start": 2.99, "end": 3.32, "value": "B" },
+    { "start": 3.32, "end": 3.67, "value": "F" },
+    { "start": 3.67, "end": 3.91, "value": "B" },
+    { "start": 3.91, "end": 4.11, "value": "C" },
+    { "start": 4.11, "end": 4.19, "value": "A" },
+    { "start": 4.19, "end": 4.37, "value": "E" },
+    { "start": 4.37, "end": 4.44, "value": "B" },
+    { "start": 4.44, "end": 4.65, "value": "F" },
+    { "start": 4.65, "end": 4.73, "value": "A" },
+    { "start": 4.73, "end": 4.95, "value": "C" },
+    { "start": 4.95, "end": 5.09, "value": "B" },
+    { "start": 5.09, "end": 5.16, "value": "G" },
+    { "start": 5.16, "end": 5.23, "value": "B" },
+    { "start": 5.23, "end": 5.31, "value": "A" },
+    { "start": 5.31, "end": 5.39, "value": "C" },
+    { "start": 5.39, "end": 5.67, "value": "A" },
+    { "start": 5.67, "end": 5.93, "value": "X" }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "status": "Sampled final frames visually reviewed",
+  "video": "exports/episode-01-3d-style.mp4",
+  "contact_sheet": "exports/qc/3d-style/contact-sheet.jpg",
+  "samples": [
+    {
+      "path": "exports/qc/3d-style/scene-01.png",
+      "time_seconds": 18.8627,
+      "title": "A catch becomes a mystery"
+    },
+    {
+      "path": "exports/qc/3d-style/scene-02.png",
+      "time_seconds": 84.9239,
+      "title": "The clue from our eyes"
+    },
+    {
+      "path": "exports/qc/3d-style/scene-03.png",
+      "time_seconds": 138.1832,
+      "title": "Where are my hands?"
+    },
+    {
+      "path": "exports/qc/3d-style/scene-04.png",
+      "time_seconds": 231.8451,
+      "title": "Listen to the clue"
+    },
+    {
+      "path": "exports/qc/3d-style/scene-05.png",
+      "time_seconds": 295.4297,
+      "title": "Make a plan"
+    },
+    {
+      "path": "exports/qc/3d-style/scene-06.png",
+      "time_seconds": 362.6117,
+      "title": "The rest of the movement team"
+    },
+    {
+      "path": "exports/qc/3d-style/scene-07.png",
+      "time_seconds": 478.7442,
+      "title": "Meet the tiny teammates"
+    },
+    {
+      "path": "exports/qc/3d-style/scene-08.png",
+      "time_seconds": 538.3808,
+      "title": "One catch, a whole team"
+    },
+    {
+      "path": "exports/qc/3d-style/viewer-question.png",
+      "time_seconds": 198.5178,
+      "title": "Viewer answer pause"
+    },
+    {
+      "path": "exports/qc/3d-style/end-credits.png",
+      "time_seconds": 598.0,
+      "title": "End credits"
+    }
+  ],
+  "caption_cue_count": 124,
+  "max_caption_lines": 2,
+  "max_caption_line_characters": 40,
+  "visual_inspection": {
+    "method": "Actual final-video contact sheet of eight scene frames, one viewer pause, and the end card; scene-five speaking frame also inspected at full 1280x720 resolution",
+    "findings": "Readable headings, science diagrams and captions; character artwork retains its approved appearance apart from intended local expression/body animation; captions fit the reserved lower strip without overlap; no clipped titles or credits observed in these samples. Mouth shapes are simple visible overlays, not a native 3D facial rig.",
+    "scope": "Ten sampled frames; not a complete real-time audiovisual review"
+  },
+  "lip_sync_accuracy": "Not established by isolated still frames"
+}

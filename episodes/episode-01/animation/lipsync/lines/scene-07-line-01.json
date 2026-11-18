@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "soundFile": "/workspace/youtube/episodes/episode-01/audio/lines/scene-07-line-01.wav",
+    "duration": 4.45
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.03, "value": "X" },
+    { "start": 0.03, "end": 0.13, "value": "D" },
+    { "start": 0.13, "end": 0.20, "value": "B" },
+    { "start": 0.20, "end": 0.28, "value": "A" },
+    { "start": 0.28, "end": 0.37, "value": "C" },
+    { "start": 0.37, "end": 0.45, "value": "A" },
+    { "start": 0.45, "end": 0.63, "value": "B" },
+    { "start": 0.63, "end": 0.77, "value": "C" },
+    { "start": 0.77, "end": 0.98, "value": "B" },
+    { "start": 0.98, "end": 1.06, "value": "A" },
+    { "start": 1.06, "end": 1.63, "value": "B" },
+    { "start": 1.63, "end": 2.00, "value": "X" },
+    { "start": 2.00, "end": 2.31, "value": "F" },
+    { "start": 2.31, "end": 2.45, "value": "C" },
+    { "start": 2.45, "end": 2.52, "value": "B" },
+    { "start": 2.52, "end": 2.59, "value": "G" },
+    { "start": 2.59, "end": 2.87, "value": "B" },
+    { "start": 2.87, "end": 2.95, "value": "A" },
+    { "start": 2.95, "end": 3.00, "value": "B" },
+    { "start": 3.00, "end": 3.05, "value": "C" },
+    { "start": 3.05, "end": 3.96, "value": "B" },
+    { "start": 3.96, "end": 4.45, "value": "X" }
+  ]
+}

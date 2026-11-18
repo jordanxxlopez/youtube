@@ -23,6 +23,7 @@ import math
 from pathlib import Path
 import subprocess
 import sys
+import time
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
@@ -181,9 +182,14 @@ def brain_layer(style,focus,width=605,height=315):
         line_path(d,pts,(60,71,88,190),2)
     return im
 
-def draw_brain(im, t, style, focus='all', pos=(85,208), scale=.95, network=True, label=True):
+@lru_cache(maxsize=40)
+def scaled_brain_layer(style, focus, scale):
     layer=brain_layer(style,focus)
     if scale!=1: layer=layer.resize((round(layer.width*scale),round(layer.height*scale)),Image.Resampling.LANCZOS)
+    return layer
+
+def draw_brain(im, t, style, focus='all', pos=(85,208), scale=.95, network=True, label=True):
+    layer=scaled_brain_layer(style,focus,scale)
     im.paste(layer,pos,layer)
     d=ImageDraw.Draw(im)
     def p(q):return (pos[0]+(q[0]*605+12)*scale,pos[1]+(q[1]*315+9)*scale)
@@ -235,7 +241,7 @@ def hand(im,x,y,flip=False,style='2d',size=1):
     d.polygon(coords,fill=col,outline=(207,218,203))
     d.line([(x+s*-12*size,y+19*size),(x+s*4*size,y+33*size),(x+s*23*size,y+35*size)],fill=(93,130,123),width=2)
 
-def catch_inset(im,t,style,stage=0,small=False,progress=None):
+def catch_inset(im,t,style,stage=0,small=False,progress=None,fixed_ball=False):
     d=ImageDraw.Draw(im)
     cx=1012; base=444
     # One narrated demonstration progresses and holds; never repeat a catch as filler.
@@ -243,14 +249,14 @@ def catch_inset(im,t,style,stage=0,small=False,progress=None):
     gap=lerp(85,38,ease(u)) if stage>0 else 85
     hand(im,cx-gap,base,False,style,.62)
     hand(im,cx+gap,base,True,style,.62)
-    y=lerp(322,425,ease(u))
+    y=425 if fixed_ball else lerp(322,425,ease(u))
     if stage==0 and u>.72:y=lerp(425,545,(u-.72)/.28)
     draw_ball(im,cx,y,23,style)
     if stage==0:
         arrow(d,(cx-51,494),(cx+51,494),P['muted'],2,7)
         text(d,(cx,525),'Notice the gap',21,P['muted'],anchor='mm')
     else:
-        text(d,(cx,535),'Hands meet the ball',21,P['muted'],anchor='mm')
+        text(d,(cx,535),'The gap changes' if fixed_ball else 'Hands meet the ball',21,P['muted'],anchor='mm')
 
 def eye(im,cx,cy,style):
     d=ImageDraw.Draw(im)
@@ -357,6 +363,15 @@ def stage_info(scene,t,duration,timeline=None):
     return stage,progress
 
 
+def cue_window(timeline, scene, line_id):
+    if not timeline:return None
+    sid=f'scene-{scene:02d}'
+    sc=next((q for q in timeline.get('scenes',[]) if q.get('scene_id')==sid),None)
+    cue=next((q for q in timeline.get('cues',[]) if q.get('line_id')==line_id and q.get('kind')=='dialogue'),None)
+    if not sc or not cue:return None
+    return cue['start_seconds']-sc['start_seconds'],cue['end_seconds']-sc['start_seconds']
+
+
 def render_frame(scene_index,style,t,duration,timeline=None):
     if not 1<=scene_index<=8:raise ValueError('scene_index must be 1–8')
     if style not in ('2d','3d'):raise ValueError('style must be 2d or 3d')
@@ -398,8 +413,14 @@ def render_frame(scene_index,style,t,duration,timeline=None):
         text(d,(1013,550),'Other regions help, too',20,P['muted'],anchor='mm')
         if stage==2: pill(d,(120,560,631,590),'Tour focus ≠ the only active region',P['muted'],19)
     elif scene_index==3:
-        panel(im,'Hands + ball','Compare their positions')
-        catch_inset(im,t,style,stage,progress=clamp((progress-(.28 if stage else 0))/.32))
+        first=cue_window(timeline,3,'scene-03-extra-01')
+        last=cue_window(timeline,3,'scene-03-extra-03')
+        observing=bool(first and last and first[0]<=t<=last[1])
+        panel(im,'Compare the gap' if observing else 'Hands + ball','Ball stays still · Hands move' if observing else 'Compare their positions')
+        motion=clamp((progress-(.28 if stage else 0))/.32)
+        if observing:
+            motion=clamp((t-(first[0]+(first[1]-first[0])*.5))/max(2,(first[1]-first[0])*.45))
+        catch_inset(im,t,style,2 if observing else stage,progress=motion,fixed_ball=observing)
         if stage>=1:pill(d,(130,558,615,590),'Touch + body position + surroundings',P['parietal'],20)
     elif scene_index==4:
         panel(im,'Dani’s spoken cue','Sound also appears as words')
@@ -421,7 +442,10 @@ def render_frame(scene_index,style,t,duration,timeline=None):
             text(d,(907,y+1),label,28,bold=True,anchor='lm')
         if stage>=2:text(d,(1012,548),'Planning works with the team',20,P['muted'],anchor='mm')
     elif scene_index==6:
-        panel(im,'Brain ↔ body','Information travels both ways')
+        first=cue_window(timeline,6,'scene-06-extra-01')
+        last=cue_window(timeline,6,'scene-06-extra-04')
+        observing=bool(first and last and first[0]<=t<=last[1])
+        panel(im,'Two directions at once' if observing else 'Brain ↔ body','Information travels both ways')
         draw_body(im,t,style)
         pill(d,(108,557,665,590),'Cerebellum: coordination + timing',P['cerebellum'],23)
     return im
@@ -442,26 +466,36 @@ def scene_duration(scene,timeline,default):
     raise ValueError(f'{sid} missing from timeline')
 
 
-def render_scene(scene_index,style,duration,path,timeline=None,fps=FPS):
-    """Render an H.264 clip whose clock begins at scene-relative time zero."""
+def render_scene(scene_index,style,duration,path,timeline=None,fps=FPS,content_fps=None,threads=1):
+    """Render exactly ceil(duration*fps) H.264 frames, scene clock beginning at zero.
+
+    Lower content_fps duplicates diagram frames into the output rate. Only one
+    FFmpeg worker is launched; encoder/filter threads default to one.
+    """
     duration=float(duration)
     if duration<=0:raise ValueError('duration must be positive')
+    content_fps=int(content_fps or fps)
+    if content_fps<1 or content_fps>fps:raise ValueError('content_fps must be between 1 and fps')
     path=Path(path);path.parent.mkdir(parents=True,exist_ok=True)
+    temporary=path.with_name(path.stem+'.rendering.mp4')
     if isinstance(timeline,(str,Path)):timeline=load_timeline(timeline)
-    cmd=['ffmpeg','-hide_banner','-loglevel','error','-y','-f','rawvideo','-pix_fmt','rgb24','-s',f'{W}x{H}','-r',str(fps),'-i','-','-an','-c:v','libx264','-preset','veryfast','-crf','20','-pix_fmt','yuv420p','-movflags','+faststart',str(path)]
+    output_count=math.ceil(duration*fps)
+    input_count=math.ceil(output_count*content_fps/fps)
+    cmd=['ffmpeg','-hide_banner','-loglevel','error','-y','-filter_threads','1','-f','rawvideo','-pix_fmt','rgb24','-s',f'{W}x{H}','-r',str(content_fps),'-i','-','-an','-c:v','libx264','-threads',str(threads),'-preset','veryfast','-crf','20','-pix_fmt','yuv420p','-r',str(fps),'-fps_mode','cfr','-frames:v',str(output_count),'-movflags','+faststart',str(temporary)]
+    started=time.monotonic()
     proc=subprocess.Popen(cmd,stdin=subprocess.PIPE)
-    count=math.ceil(duration*fps)
     try:
-        for frame_index in range(count):
-            im=render_frame(scene_index,style,frame_index/fps,duration,timeline)
+        for frame_index in range(input_count):
+            im=render_frame(scene_index,style,frame_index/content_fps,duration,timeline)
             proc.stdin.write(im.tobytes())
         proc.stdin.close()
         ret=proc.wait()
         if ret:raise RuntimeError(f'ffmpeg exited {ret}')
+        temporary.replace(path)
     except BaseException:
         if proc.poll() is None:proc.kill()
         raise
-    return {'scene':scene_index,'style':style,'path':str(path),'duration_seconds':count/fps,'requested_seconds':duration,'fps':fps,'frames':count,'size':[W,H]}
+    return {'scene':scene_index,'style':style,'path':str(path),'duration_seconds':output_count/fps,'requested_seconds':duration,'fps':fps,'content_fps':content_fps,'frames':output_count,'size':[W,H],'render_seconds':round(time.monotonic()-started,3)}
 
 
 def main():
@@ -475,6 +509,8 @@ def main():
     parser.add_argument('--preview',action='store_true')
     parser.add_argument('--frames-only',action='store_true')
     parser.add_argument('--fps',type=int,default=FPS)
+    parser.add_argument('--content-fps',type=int,default=12)
+    parser.add_argument('--threads',type=int,default=1)
     args=parser.parse_args()
     scenes=list(range(1,9)) if args.scene=='all' else [int(args.scene)]
     styles=['2d','3d'] if args.style=='both' else [args.style]
@@ -491,9 +527,14 @@ def main():
             render_frame(scene,style,duration*.72,duration,None if args.preview else timeline).save(frame_path)
             if not args.frames_only:
                 path=args.output or target/style/f'scene-{scene:02d}.mp4'
-                info=render_scene(scene,style,duration,path,None if args.preview else timeline,args.fps)
+                info=render_scene(scene,style,duration,path,None if args.preview else timeline,args.fps,args.content_fps,args.threads)
                 records.append(info)
                 print(json.dumps(info),flush=True)
+                manifest_path=target/'render-manifest.json'
+                previous=json.loads(manifest_path.read_text()).get('clips',[]) if manifest_path.exists() else []
+                combined={item['path']:item for item in previous}
+                combined.update({item['path']:item for item in records})
+                manifest_path.write_text(json.dumps({'renderer':'render_diagrams.py','original_artwork':True,'subtitle_reserved_pixels':110,'timeline':str(args.timeline) if args.timeline else None,'clips':list(combined.values())},indent=2)+'\n')
     if records:
         manifest_path=target/'render-manifest.json'
         previous=json.loads(manifest_path.read_text()).get('clips',[]) if manifest_path.exists() else []

@@ -24,10 +24,13 @@ Both PNGs are the unchanged approved originals at 1024 × 1536 pixels. The 3D
 reference is an image; this repository does not yet contain a 3D model or rig.
 Save future derivatives separately and keep these masters unchanged.
 
-## Episode 1 — in production
+## Episode 1 — local animation
 
-[The Brain Team Challenge](episodes/episode-01/README.md) is planned as a
-ten-minute episode in each approved visual style. The production package
-contains the script, science notes, measured dialogue timing, and captions.
-The full animated films are not yet rendered; short motion and speech tests
-are development shots, not the completed episode.
+[The Brain Team Challenge](episodes/episode-01/README.md) has a complete
+600-second edit in each approved appearance. The production method animates
+the existing artwork locally with recorded dialogue, mouth cues, modest body
+motion, progressing science diagrams, and English captions. The shaded version
+is animated 3D-style artwork, not a new 3D model.
+
+[Local rendering instructions](episodes/episode-01/animation/README.md) explain
+how to reproduce the two playback files. The approved masters remain unchanged.

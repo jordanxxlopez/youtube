@@ -1,0 +1,558 @@
+{
+  "source": "/workspace/youtube/characters/teo/images/teo-approved-3d.png",
+  "source_sha256": "331e69be745122e1af508ab8149d928c76ce3e86334b95d202a82824eabe38a9",
+  "canvas": [
+    1024,
+    1536
+  ],
+  "cutout": "teo-cutout.png",
+  "alpha": "character-alpha.png",
+  "rest_partition": [
+    "leg-left",
+    "leg-right",
+    "torso",
+    "arm-left",
+    "arm-right",
+    "head"
+  ],
+  "gentle_walk_layers": [
+    "leg-left-lower",
+    "leg-right-lower",
+    "leg-left-upper",
+    "leg-right-upper",
+    "upper-body-overlap"
+  ],
+  "layers": {
+    "head": {
+      "file": "head.png",
+      "mask": "head-mask.png",
+      "crop": "head-crop.png",
+      "bbox": [
+        357,
+        60,
+        584,
+        318
+      ],
+      "pivot": [
+        494,
+        292
+      ],
+      "crop_pivot": [
+        137,
+        232
+      ],
+      "parent": "torso",
+      "rest": {
+        "translation": [
+          0,
+          0
+        ],
+        "rotation_degrees": 0,
+        "scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "torso": {
+      "file": "torso.png",
+      "mask": "torso-mask.png",
+      "crop": "torso-crop.png",
+      "bbox": [
+        328,
+        272,
+        647,
+        763
+      ],
+      "pivot": [
+        480,
+        763
+      ],
+      "crop_pivot": [
+        152,
+        491
+      ],
+      "parent": null,
+      "rest": {
+        "translation": [
+          0,
+          0
+        ],
+        "rotation_degrees": 0,
+        "scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "arm-left": {
+      "file": "arm-left.png",
+      "mask": "arm-left-mask.png",
+      "crop": "arm-left-crop.png",
+      "bbox": [
+        296,
+        342,
+        397,
+        757
+      ],
+      "pivot": [
+        354,
+        366
+      ],
+      "crop_pivot": [
+        58,
+        24
+      ],
+      "parent": "torso",
+      "rest": {
+        "translation": [
+          0,
+          0
+        ],
+        "rotation_degrees": 0,
+        "scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "arm-right": {
+      "file": "arm-right.png",
+      "mask": "arm-right-mask.png",
+      "crop": "arm-right-crop.png",
+      "bbox": [
+        571,
+        318,
+        728,
+        763
+      ],
+      "pivot": [
+        660,
+        370
+      ],
+      "crop_pivot": [
+        89,
+        52
+      ],
+      "parent": "torso",
+      "rest": {
+        "translation": [
+          0,
+          0
+        ],
+        "rotation_degrees": 0,
+        "scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "leg-left": {
+      "file": "leg-left.png",
+      "mask": "leg-left-mask.png",
+      "crop": "leg-left-crop.png",
+      "bbox": [
+        258,
+        763,
+        468,
+        1464
+      ],
+      "pivot": [
+        399,
+        776
+      ],
+      "crop_pivot": [
+        141,
+        13
+      ],
+      "parent": "torso",
+      "rest": {
+        "translation": [
+          0,
+          0
+        ],
+        "rotation_degrees": 0,
+        "scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "leg-right": {
+      "file": "leg-right.png",
+      "mask": "leg-right-mask.png",
+      "crop": "leg-right-crop.png",
+      "bbox": [
+        468,
+        763,
+        699,
+        1480
+      ],
+      "pivot": [
+        549,
+        776
+      ],
+      "crop_pivot": [
+        81,
+        13
+      ],
+      "parent": "torso",
+      "rest": {
+        "translation": [
+          0,
+          0
+        ],
+        "rotation_degrees": 0,
+        "scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "leg-left-upper": {
+      "file": "leg-left-upper.png",
+      "mask": "leg-left-upper-mask.png",
+      "crop": "leg-left-upper-crop.png",
+      "bbox": [
+        326,
+        763,
+        468,
+        1092
+      ],
+      "pivot": [
+        399,
+        776
+      ],
+      "crop_pivot": [
+        73,
+        13
+      ],
+      "parent": "torso",
+      "rest": {
+        "translation": [
+          0,
+          0
+        ],
+        "rotation_degrees": 0,
+        "scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "leg-left-lower": {
+      "file": "leg-left-lower.png",
+      "mask": "leg-left-lower-mask.png",
+      "crop": "leg-left-lower-crop.png",
+      "bbox": [
+        258,
+        1044,
+        447,
+        1464
+      ],
+      "pivot": [
+        391,
+        1068
+      ],
+      "crop_pivot": [
+        133,
+        24
+      ],
+      "parent": "leg-left-upper",
+      "rest": {
+        "translation": [
+          0,
+          0
+        ],
+        "rotation_degrees": 0,
+        "scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "leg-right-upper": {
+      "file": "leg-right-upper.png",
+      "mask": "leg-right-upper-mask.png",
+      "crop": "leg-right-upper-crop.png",
+      "bbox": [
+        468,
+        763,
+        653,
+        1092
+      ],
+      "pivot": [
+        549,
+        776
+      ],
+      "crop_pivot": [
+        81,
+        13
+      ],
+      "parent": "torso",
+      "rest": {
+        "translation": [
+          0,
+          0
+        ],
+        "rotation_degrees": 0,
+        "scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "leg-right-lower": {
+      "file": "leg-right-lower.png",
+      "mask": "leg-right-lower-mask.png",
+      "crop": "leg-right-lower-crop.png",
+      "bbox": [
+        531,
+        1044,
+        699,
+        1480
+      ],
+      "pivot": [
+        586,
+        1070
+      ],
+      "crop_pivot": [
+        55,
+        26
+      ],
+      "parent": "leg-right-upper",
+      "rest": {
+        "translation": [
+          0,
+          0
+        ],
+        "rotation_degrees": 0,
+        "scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "upper-body": {
+      "file": "upper-body.png",
+      "mask": "upper-body-mask.png",
+      "crop": "upper-body-crop.png",
+      "bbox": [
+        296,
+        60,
+        728,
+        763
+      ],
+      "pivot": [
+        480,
+        763
+      ],
+      "crop_pivot": [
+        184,
+        703
+      ],
+      "parent": null,
+      "rest": {
+        "translation": [
+          0,
+          0
+        ],
+        "rotation_degrees": 0,
+        "scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "upper-body-overlap": {
+      "file": "upper-body-overlap.png",
+      "mask": "upper-body-overlap-mask.png",
+      "crop": "upper-body-overlap-crop.png",
+      "bbox": [
+        296,
+        60,
+        728,
+        789
+      ],
+      "pivot": [
+        480,
+        763
+      ],
+      "crop_pivot": [
+        184,
+        703
+      ],
+      "parent": null,
+      "rest": {
+        "translation": [
+          0,
+          0
+        ],
+        "rotation_degrees": 0,
+        "scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "upper-body-no-head": {
+      "file": "upper-body-no-head.png",
+      "mask": "upper-body-no-head-mask.png",
+      "crop": "upper-body-no-head-crop.png",
+      "bbox": [
+        296,
+        272,
+        728,
+        789
+      ],
+      "pivot": [
+        480,
+        763
+      ],
+      "crop_pivot": [
+        184,
+        491
+      ],
+      "parent": null,
+      "rest": {
+        "translation": [
+          0,
+          0
+        ],
+        "rotation_degrees": 0,
+        "scale": [
+          1,
+          1
+        ]
+      }
+    },
+    "face-original": {
+      "file": "face-original.png",
+      "mask": "face-original-mask.png",
+      "crop": "face-original-crop.png",
+      "bbox": [
+        404,
+        139,
+        557,
+        267
+      ],
+      "pivot": [
+        466,
+        222
+      ],
+      "crop_pivot": [
+        62,
+        83
+      ],
+      "parent": "head",
+      "rest": {
+        "translation": [
+          0,
+          0
+        ],
+        "rotation_degrees": 0,
+        "scale": [
+          1,
+          1
+        ]
+      }
+    }
+  },
+  "landmarks": {
+    "head_pivot": [
+      494,
+      292
+    ],
+    "neck_pivot": [
+      495,
+      298
+    ],
+    "hips": {
+      "left": [
+        399,
+        776
+      ],
+      "right": [
+        549,
+        776
+      ]
+    },
+    "knees": {
+      "left": [
+        391,
+        1068
+      ],
+      "right": [
+        586,
+        1070
+      ]
+    },
+    "ankles": {
+      "left": [
+        370,
+        1313
+      ],
+      "right": [
+        621,
+        1330
+      ]
+    },
+    "shoulders": {
+      "left": [
+        354,
+        366
+      ],
+      "right": [
+        660,
+        370
+      ]
+    },
+    "elbows": {
+      "left": [
+        337,
+        559
+      ],
+      "right": [
+        683,
+        552
+      ]
+    },
+    "wrists": {
+      "left": [
+        339,
+        703
+      ],
+      "right": [
+        607,
+        714
+      ]
+    },
+    "mouth_rect": [
+      436,
+      207,
+      502,
+      238
+    ],
+    "mouth_center": [
+      466,
+      222
+    ],
+    "eye_centers": [
+      [
+        434,
+        181
+      ],
+      [
+        486,
+        170
+      ]
+    ]
+  },
+  "limitations": [
+    "Artwork is one fixed three-quarter view with hands in pockets, not a full 3D character rig.",
+    "No hidden body parts were synthesized; large rotations/strides can expose gaps or alter the apparent silhouette.",
+    "Use gentle leg articulation and weight shifts, keep arms with torso for natural hands-in-pockets pose.",
+    "Use whole upper-body for gap-free rests; upper-body overlap covers waist seams during small motions.",
+    "Do not overlay the face-original layer unchanged when head moves; it is a source patch for matching facial deformation."
+  ]
+}

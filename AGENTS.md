@@ -22,3 +22,12 @@ character lock preserves appearance; it does not freeze acting or the mouth.
 The reference images are authoritative when prose or prompts disagree. This
 is a project continuity rule; it does not imply a technical file lock or that
 fresh image generation can produce pixel-identical copies.
+
+## Current episode production direction
+
+The user explicitly requested using the existing approved 2D and 3D character
+artwork and local methods, without Runway or another external video-generation
+service. Use the local animation pipeline for Episode 1. Do not replace Teo
+with a newly designed or newly modeled character. The shaded output is animated
+3D-style artwork; describe it accurately. The full deliverable remains ten
+minutes in each style. Short internal technical checks are not the deliverable.

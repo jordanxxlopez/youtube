@@ -1,0 +1,16 @@
+{
+  "cache_key": "fbc1260c12e52fe3813358b366d68666929703a79790eee878d5ae14aace5205",
+  "duration_seconds": 600.0,
+  "channels": 2,
+  "sample_rate": 48000,
+  "dialogue_source_sha256": "8835a7a7e513a619a0e80278c173e55183edbc0491231c3f077941a295d02c81",
+  "master_sha256": "681fcb35b04adf08382179ca18c1f009406ac3c09071974627599f2e88d90805",
+  "integrated_lufs": -16.01,
+  "true_peak_dbtp": -1.5,
+  "loudness_range_lu": 5.4,
+  "music_effects_peak_dbfs": -31.81,
+  "viewer_pause_sound_effects": false,
+  "time_stretching": false,
+  "listening_review": "Pending actual listening; measured levels alone do not establish intelligibility",
+  "picture_lip_sync_review": "Not assessed by this audio validation"
+}

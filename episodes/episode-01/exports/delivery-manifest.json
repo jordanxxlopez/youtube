@@ -1,0 +1,42 @@
+{
+  "status": "Two complete local illustrated first cuts exported",
+  "method": "Original approved 2D and 3D-style artwork animated as cutout layers; no new character model",
+  "external_video_generation_calls_for_these_exports": 0,
+  "mouth_movement": "Rhubarb cues from the exact recorded dialogue, with interpolated mouth poses",
+  "body_movement": "Limited small steps, head movements, weight shifts and blinking",
+  "captions": "Burned English captions; sidecar SRT/VTT also available",
+  "files": [
+    {
+      "file": "exports/episode-01-2d.mp4",
+      "sha256": "68a82524a5e530779132b1b3f6fad2b2ff320a166e81b7dc2f12394bcf3d3f20",
+      "bytes": 29443623,
+      "duration_seconds": 600.0,
+      "frames": 14400,
+      "frame_rate": "24/1",
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "size": [
+        1280,
+        720
+      ],
+      "chapters": 9
+    },
+    {
+      "file": "exports/episode-01-3d-style.mp4",
+      "sha256": "e27e19049c154847834621543ff18772e46d9cd049bf05eb36811dad9c844f16",
+      "bytes": 26674485,
+      "duration_seconds": 600.0,
+      "frames": 14400,
+      "frame_rate": "24/1",
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "size": [
+        1280,
+        720
+      ],
+      "chapters": 9
+    }
+  ],
+  "review_scope": "Complete technical frame decode plus sampled final-frame checks. No claim of comprehensive human listening or precise perceptual lip-sync approval.",
+  "canonical_images_unchanged": true
+}

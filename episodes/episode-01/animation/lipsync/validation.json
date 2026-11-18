@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "line_count": 72,
+  "mouth_cue_count": 3085,
+  "speaker_tracks": 5,
+  "original_audio_hashes_unchanged": true,
+  "checks": [
+    "Every line matches the exact script text.",
+    "Every cue is ordered, bounded by its input line audio, and uses a known Rhubarb shape.",
+    "Each tool duration matches the real line duration within centisecond rounding.",
+    "Episode cues use the measured audio timeline offsets.",
+    "Every speaker track uses rest during gaps and closes through the end of the planned 600-second edit.",
+    "No source audio hashes changed.",
+    "All 72 unique lines are present exactly once.",
+    "All five speaker tracks are contiguous from 0.000 to 600.000 seconds.",
+    "Current source script and timeline hashes match the combined cue manifest."
+  ],
+  "visual_lipsync_status": "UNREVIEWED; no rendered rig or video supplied"
+}

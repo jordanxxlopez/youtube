@@ -1,55 +1,50 @@
 # Episode 1 — The Brain Team Challenge
 
-The deliverable is a **ten-minute episode in 2D and a ten-minute episode in
-stylized 3D**, using the same locked Teo design and story. Ten-second animation
-tests are individual shots, not an episode or a reduced runtime target.
+The deliverables are a **ten-minute 2D video and a ten-minute 3D-style video**
+using the existing approved Teo artwork. The local pipeline preserves the
+canonical PNGs and animates derived layers, mouth poses, blinking, gentle
+head/body movement and small articulated steps. It uses no external video
+service. The shaded version animates the approved illustration; it is not a
+newly modeled, fully rotatable 3D character.
 
-## Current production state
+## Playback and source
 
-The script, scientific review, generated dialogue, captions, and scene timing
-are production assets. The complete animated films have **not** been rendered.
-Short Runway tests establish possible walking and speaking treatments; they
-do not establish a consistent ten-minute performance or final lip-sync quality.
+Final working playback files:
 
+- `exports/episode-01-2d.mp4`
+- `exports/episode-01-3d-style.mp4`
+
+Both outputs are 1280 × 720, 24 fps, H.264/AAC with English captions and chapter
+metadata. Final export validation records duration, decoded frames, hashes
+and review limits. Playback files are delivered in the conversation and kept
+in working storage; the repository contains the reproducible production sources.
+
+- [Local animation pipeline](animation/README.md)
 - [Script and scene directions](script.md)
 - [Structured dialogue](dialogue.json)
 - [Science notes and sources](science-notes.md)
+- [Full dialogue listening copy](audio/episode-01-dialogue.mp3)
 - [Measured dialogue timeline](audio/timeline.json)
-- [Full dialogue listening copy — 9:55.969](audio/episode-01-dialogue.mp3)
-- [Voice provenance and limitations](audio/README.md)
-- [English subtitles](captions/episode-01.en.srt)
-- [Full render scope](production/render-scope.json)
-- [Current edit plan](production/edit-plan.json)
-- [Teo's appearance and animation rules](../../characters/teo/CHARACTER_LOCK.md)
+- [Mouth timing and provenance](animation/lipsync/README.md)
+- [English captions](captions/episode-01.en.srt)
+- [Character appearance and acting rules](../../characters/teo/CHARACTER_LOCK.md)
 
-The source dialogue and its timing are shared between styles. A final voice
-performance must drive visible mouth shapes, pauses, stress, and expressions.
-Independently generated dialogue with different timing cannot be placed over
-the existing animation and called synchronized speech. Body movement, eye
-movement, natural speaking mouth shapes, and expressions are allowed; Teo's
-identity, proportions, clothes, and palette remain fixed.
+The measured dialogue and authored action holds total 595.968625 seconds.
+Cumulative scene boundaries reach 596 seconds of picture; a four-second closing
+card completes exactly 600 seconds, 14,400 frames. Voices are not stretched and
+short video tests are not repeated to fill the runtime.
 
-The measured story and authored action holds total 595.968625 seconds. At
-24 fps, a 0.031375-second transition reaches 9:56, followed by a four-second
-credits card to complete exactly 10:00. This is the edit specification; it is
-not a claim that either finished film exists. The repository includes the
-compressed dialogue listening copy. Individual WAV takes, generated scene
-keyframes, and development video tests are retained in the working assets.
+## Animation and review
 
-The full scene plan requires distinct narrative shots and useful animated
-science cutaways. It does not permit repeating a short test, slowing it down,
-or substituting a static speaking portrait to reach ten minutes. The generated
-speech is a draft performance; character acting and final mix remain open.
+The output is an illustrated educational first cut with limited cutout
+animation. The source images supply one view and hands-in-pockets poses, so
+body movement remains modest. Dialogue uses recorded stock synthetic voices.
+Rhubarb's audio-derived mouth cues drive visible speaking poses with brief
+blended transitions. Pauses return to the approved resting expression.
+Automated timing and sampled frame inspection do not replace a complete
+human audiovisual review of naturalness and precise articulation.
 
-## Rendering requirements
-
-Complete and review the audio-driven character performances, finish each
-scene's animated environment and scientific cutaways, then assemble and check
-both 600-second exports. Check identity throughout each shot, foot contact,
-hands and props, pronunciation, actual mouth/audio synchronization, captions,
-sound balance, and the final measured runtime.
-
-Credit estimates in the render scope are planning estimates from published
-rates, not a purchase or an assurance of successful first-pass results. Silent
-image-to-video generation alone does not satisfy the speaking-performance
-requirement. No additional credit purchase is authorized by these documents.
+The earlier external-generation cost/shot proposal remains in
+`production/render-scope.json` and `production/edit-plan.json` as historical
+planning. It is not a dependency, purchase request, or blocker for the local
+pipeline. `production/local_assemble.py` is the current delivery path.

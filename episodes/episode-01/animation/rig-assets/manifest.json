@@ -1,0 +1,22 @@
+{
+  "canvas": [
+    1024,
+    1536
+  ],
+  "coordinate_system": "source image pixels; origin top-left; positive x right, positive y down; left/right names are viewer-left/viewer-right",
+  "rgb_policy": "Every layer RGB is copied exactly from approved source; only alpha masks differ. No redraw or inpainting.",
+  "styles": {
+    "2d": {
+      "directory": "2d",
+      "rig": "2d/rig.json",
+      "source_sha256": "6c035528e92d0f16fff859cace591949eabf87fa62529cf553cb464144d630e9",
+      "rest_partition_verified": true
+    },
+    "3d": {
+      "directory": "3d",
+      "rig": "3d/rig.json",
+      "source_sha256": "331e69be745122e1af508ab8149d928c76ce3e86334b95d202a82824eabe38a9",
+      "rest_partition_verified": true
+    }
+  }
+}
