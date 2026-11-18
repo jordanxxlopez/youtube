@@ -25,8 +25,8 @@ fresh image generation can produce pixel-identical copies.
 
 ## Current episode production direction
 
-The user's latest direction supersedes the earlier local-only method: use the
-existing approved 2D and 3D character designs in fluid, cinematic scene acting.
+Use the existing approved 2D and 3D character designs in fluid, cinematic
+scene acting.
 The user rejected the local cutout/presenter exports. Retain them as rejected
 prototypes, not approved deliverables or the production template.
 
@@ -42,3 +42,13 @@ research authorization alone is not authorization to buy credits/subscriptions.
 The deliverables remain two complete ten-minute films, one in each approved
 style. Individual short shots or tests are production components, not the full
 deliverable. Do not describe a 3D-style image/video as an editable 3D model.
+
+## Current budget constraint
+
+The user said to do the work here because the proposed paid generation was
+unaffordable. Treat the current additional-spending budget as $0. Do not buy
+credits, start new paid generation, or present the previously quoted paid plan
+as accepted. Preserve the cinematic quality requirement and both ten-minute
+deliverables; the budget constraint does not authorize a cutout/slideshow
+substitute or a character redesign. No verified free route currently meets the
+benchmark in this workspace. Explain actual capability limits honestly.

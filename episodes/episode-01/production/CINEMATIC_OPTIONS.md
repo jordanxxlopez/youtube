@@ -1,5 +1,9 @@
 # Cinematic production routes
 
+**Latest user constraint: $0 additional spending.** The quoted paid workflow
+is not accepted. Preserve the full cinematic goal and existing character
+references; do not substitute the rejected local cutout approach.
+
 Researched November 18, 2026. These are capability findings and planning
 estimates, not completed renders or an approved spending budget. Follow
 [the cinematic brief](CINEMATIC_BRIEF.md) and preserve both approved Teo designs.
@@ -87,3 +91,15 @@ Long duration alone is not sufficient: HeyGen's
 do not direct walking, prop actions, or scene changes. Hedra Character 3's long
 talking-character support likewise does not establish the full cinematic
 performance requested. They are not substitutes for this production brief.
+
+## Local capability check after the budget clarification
+
+The current workspace has five CPU cores and about 18 GB RAM, Blender and
+FFmpeg, but no exposed GPU. The project has no editable Blender/GLB/FBX
+character model or performance rig. The approved PNGs define appearance; they
+do not supply geometry, facial controls, unseen surfaces, or animation. Manual
+modeling/rigging is possible with free software but remains substantial new
+production work, with fidelity review; it is not an established equivalent to
+the selected generated-video benchmark. No verified $0 route currently
+delivers both full cinematic films here. No paid generations were started
+after the user set this budget constraint.
